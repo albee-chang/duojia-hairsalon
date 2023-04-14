@@ -1,4 +1,96 @@
 @font-face {
-    font-family: "KuroW00";
-    src: url("./fonts/KuroW00-Medium.ttf") format("truetype");
+  font-family: "KuroW00";
+  src: url("./fonts/KuroW00-Medium.ttf") format("truetype");
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display:flex;
+  justify-content:center;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+.navbar {
+  z-index: 1;
+}
+  .navbar-wrapper {
+    position: relative;
+  }
+  .navbar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    height: 64px;
+    background-color: #243a41;
+  }
+.navbar-brand img {
+  height: 80px;
+}
+
+.navbar-nav li {
+  padding-left: 20px;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.nav-item {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  font-family: "思源黑體";
+  font-weight: 400;
+  color: #756656;
+  background-color: #c7936cCC;
+}
+
+.nav-link {
+  display: block;
+  font-family: "KuroW00", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.navbar .nav-item .nav-link::after {
+  content: attr(data-title);
+  display: block;
+  font-family: "KuroW00", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.active::before {
+  content: "( ";
+  color: white;
+}
+.active::after {
+  content: " ) ";
+  color: white;
+}
+
+.collapseList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+
 }
