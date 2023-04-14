@@ -1,7 +1,7 @@
-.newsBg {
+.shopBg {
     position: relative;
   }
-  .newsBg .newsBgImg {
+  .shopBg .shopBgImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -26,7 +26,7 @@
     max-height: 100%;
   }
   
-  .newsTitleEN {
+  .shopTitleEN {
     font-family: "KuroW00", sans-serif;
     font-weight: 500;
     font-size: 40pt;
@@ -55,7 +55,7 @@
     left: 0;
   }
   
-  .newsBread-crumb {
+  .shopBread-crumb {
     position: absolute;
     z-index: 1;
     top: 35%;
@@ -68,7 +68,7 @@
     max-height: 100%;
     text-decoration: none;
   }
-  .newsBread-crumb i {
+  .shopBread-crumb i {
     color: white;
     background-color: #243a41;
     padding: 0.1rem 0.3rem 0.2rem 0.3rem;
@@ -76,7 +76,7 @@
     border-radius: 50%;
   }
   
-  .newsContainer {
+  .shopContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@
     margin: 0 auto;
   }
   
-  .newsContentImg {
+  .shopContentImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
