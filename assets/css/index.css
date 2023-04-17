@@ -1,19 +1,19 @@
 
-
 .serviceArea {
-  background-image: url('../img/serviceArea.png');
+  background-image: url("../img/serviceArea.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   height: 1900px;
   position: relative;
+  overflow: hidden;
 }
 
 .bg-color01 {
   background-color: #ebe7d2;
   width: 800px;
   height: 480px;
-  position: absolute ;
+  position: absolute;
   top: 0%;
   right: 0%;
 }
@@ -21,7 +21,7 @@
   background-color: #ececec80;
   width: 800px;
   height: 480px;
-  position: absolute ;
+  position: absolute;
   top: 30%;
   left: 0%;
   margin-top: 160px;
@@ -37,7 +37,7 @@
   top: -20px;
   left: 0;
 }
- /* --------------會員區塊-------------- */
+/* --------------會員區塊-------------- */
 .memberTitleEN {
   font-family: "KuroW00", sans-serif;
   font-weight: 500;
@@ -47,8 +47,8 @@
   margin-top: 100px;
   position: absolute;
   z-index: 1;
-  top:150px;
-  right: 25%;
+  top: 150px;
+  right: 10%;
   letter-spacing: 0.1rem;
 }
 .memberTitleCH {
@@ -70,11 +70,12 @@
   z-index: 1;
   top: 18%;
   left: 20%;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 /* --------------箭頭區塊-------------- */
-.sendBtn i{
+.sendBtn i {
   border: solid #ca9a74;
   display: inline-block;
 }
@@ -94,7 +95,7 @@
   transition: left 0.5s ease-out;
 }
 
-.sendBtn2 i{
+.sendBtn2 i {
   border: solid white;
   display: inline-block;
 }
@@ -102,7 +103,7 @@
 .sendBtn2 .rightArrow2 {
   position: absolute;
   z-index: 2;
-  bottom:18%;
+  bottom: 18%;
   right: 18%;
   border-width: 0 5px 3px 0;
   padding: 1px 120px 10px 12px;
@@ -113,7 +114,15 @@
   transform: skewX(66deg);
   transition: left 0.5s ease-out;
 }
- /* --------------服務項目區塊-------------- */
+.sendBtn2 .linkSquare {
+  position: absolute;
+  border:1px solid white;
+  top: 18%;
+  right: 20%;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+/* --------------服務項目區塊-------------- */
 .serviceTitleEN {
   font-family: "KuroW00", sans-serif;
   font-weight: 500;
@@ -122,7 +131,7 @@
   text-align: left;
   position: absolute;
   z-index: 1;
-  bottom:45%;
+  bottom: 45%;
   right: 25%;
   letter-spacing: 0.1rem;
 }
@@ -145,32 +154,63 @@
   z-index: 1;
   bottom: 16%;
   right: 15%;
-  max-width: 100%;
-  max-height: 100%;
 }
- /* --------------最新消息區塊-------------- */
-.newsBg {
-width: 100%;
-height: 100%;
-object-fit: cover;
+/* --------------最新消息區塊-------------- */
+/* ---------footer 設定---------- */
+.newsFooter {
   position: relative;
+  width: 100%;
+  height: 450px;
 }
 
-.drop-down-menu {
-  display: none;
+.newsBg {
+  background-image: url("../img/newsBg.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  
+
 }
-.drop-down-menu:hover {
-  display: block;
-}
-
-
-
-
 
 
 /* --------------響應式調整-------------- */
-@media screen and (max-width: 900px) {
 
+
+@media screen and (max-width: 1150px) {
+  .memberTitleEN {
+    font-family: "KuroW00", sans-serif;
+    font-weight: 500;
+    font-size: 40pt;
+    color: #67819b;
+    text-align: left;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    right: 10%;
+    letter-spacing: 0.1rem;
+  }
+  .memberTitleCH {
+    font-family: "思源黑體";
+    font-weight: 400;
+    font-size: 18pt;
+    color: #243a41;
+    text-align: left;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 185px;
+    left: 20%;
+    letter-spacing: 0.1rem;
+  }
+  .serviceImg {
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
   .memberTitleCH {
     font-family: "思源黑體";
     font-weight: 400;
@@ -180,7 +220,7 @@ object-fit: cover;
     margin-top: 100px;
     position: absolute;
     z-index: 1;
-    top: 5%;
+    top: 7%;
     left: 2%;
     letter-spacing: 0.1rem;
   }
@@ -198,6 +238,19 @@ object-fit: cover;
     letter-spacing: 0.1rem;
     line-height: 97%;
   }
+  .memberShopImg {
+    position: absolute;
+    z-index: 1;
+    top: 18%;
+    left: 0%;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  .memberShopImg img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
   .sendBtn .rightArrow {
     position: absolute;
     z-index: 2;
@@ -210,46 +263,39 @@ object-fit: cover;
   .sendBtn2 .rightArrow2 {
     position: absolute;
     z-index: 2;
-    bottom:16%;
+    bottom: 38%;
     right: 10%;
     border-width: 0 5px 3px 0;
     padding: 1px 120px 10px 12px;
     transform: skewX(60deg);
   }
-  .memberShopImg {
-    position: absolute;
-    z-index: 1;
-    top: 20%;
-    left: 0;
-    max-width: 100%;
-    max-height: 100%;
-    transition:  0.3s ease-out;
-  }
   .serviceImg {
     position: absolute;
     z-index: 1;
-    bottom: 14%;
-    left: 5%;
-    max-width: 100%;
-    max-height: 100%;
-    transition:  0.3s ease-out;
-
+    top: 45%;
+    right: 0%;
+  }
+  .serviceImg img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: 0.3s ease-out;
   }
   .bg-color02 {
     background-color: #ececec80;
     width: 800px;
     height: 480px;
-    position: absolute ;
-    top: 62%;
+    position: absolute;
+    top: 42%;
     left: 0%;
     margin-top: 160px;
-    transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
   }
   .linear-gradient-02 {
     position: absolute;
     top: -20px;
     left: 0;
-    transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
   }
   .serviceTitleEN {
     font-family: "KuroW00", sans-serif;
@@ -259,12 +305,12 @@ object-fit: cover;
     text-align: left;
     position: absolute;
     z-index: 1;
-    bottom:47%;
+    top: 37%;
     left: 2%;
     letter-spacing: 0.1rem;
-    transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
   }
-  
+
   .serviceTitleCH {
     font-family: "思源黑體";
     font-weight: 400;
@@ -273,9 +319,9 @@ object-fit: cover;
     text-align: left;
     position: absolute;
     z-index: 1;
-    bottom:45%;
+    top: 40.5%;
     left: 2%;
     letter-spacing: 0.1rem;
-    transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
   }
 }
