@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <!-- 載入 W3 CSS CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- 載入 KuroW00 Fonts -->
     <link
       href="//db.onlinewebfonts.com/c/5cfbae91ba82e6689f76fdc43d9444b7?family=Kuro+W00+Medium"
@@ -71,6 +73,7 @@
                 >
               </li>
               <li class="nav-item">
+                <div class="nav-bar-icons"><i class="bi bi-person-fill text-white"></i>|<i class="bi bi-cart4"></i></div>
                 <a class="nav-link" href="./shop.html" data-title="SHOP"
                   >線上商城</a
                 >
@@ -111,138 +114,74 @@
         <span>/ 服務項目</span>
       </div>
     </div>
-    <div class="serviceContainer text-start ">
+    <div class="serviceContainer text-start">
       <h3 class="serviceTitle">服務項目</h3>
       <!-- Nav tabs -->
-      <ul class="nav nav-tabs" id="serviceTab" role="tablist">
-        <li class="nav-item serviceTags" role="presentation">
-          <button
-            class="nav-link active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home"
-            type="button"
-            role="tab"
-            aria-controls="home"
-            aria-selected="true"
-          >
-            洗髮
-          </button>
-        </li>
-        <li class="nav-item serviceTags" role="presentation">
-          <button
-            class="nav-link"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile"
-            type="button"
-            role="tab"
-            aria-controls="profile"
-            aria-selected="false"
-          >
-            剪髮
-          </button>
-        </li>
-        <li class="nav-item serviceTags" role="presentation">
-          <button
-            class="nav-link"
-            id="messages-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#messages"
-            type="button"
-            role="tab"
-            aria-controls="messages"
-            aria-selected="false"
-          >
-            造型
-          </button>
-        </li>
-        <li class="nav-item  serviceTags" role="presentation">
-          <button
-            class="nav-link"
-            id="settings-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#settings"
-            type="button"
-            role="tab"
-            aria-controls="settings"
-            aria-selected="false"
-          >
-            燙髮
-          </button>
-        </li>
-      </ul>
+      <div class="w3-bar">        
+        <button class="w3-bar-item w3-button w3-right" onclick="openHair('permHair')">
+          燙髮
+        </button>
+        <button class="w3-bar-item w3-button w3-right" onclick="openHair('hairStyle')">
+          造型
+        </button>
+        <button class="w3-bar-item w3-button w3-right" onclick="openHair('cutHair')">
+          剪髮
+        </button>
+        <button class="w3-bar-item w3-button w3-right open" onclick="openHair('washHair')">
+          洗髮
+        </button>
+      </div>
       <!-- Tab panes -->
-      <div class="tab-content">
-        <div
-          class="tab-pane active"
-          id="home"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-        >
-          <p>
-            沙龍級洗髮精主要主打添加對頭髮肌膚刺激少、抑制損傷、使用後頭髮較滋潤滑順的成分為主，像是對肌膚溫和且安全
-            性高的胺基酸等，與一般市售產品可能含酒精類的洗髮精不同。頭髮是死的組織，頭皮才是活的組織！頭皮的主要功能
-            在隔絕外在環境髒污，也可避免肌膚的水分過度蒸發。所以平常說的洗頭基本上是在洗頭皮喔！針對環境髒污及人體代
-            謝的廢棄物做清潔，注意不要過度清潔，才能保留正常頭皮的天然皮脂膜，以維持健康。
-          </p>
-          <p>
-            <span class="fw-bold text-black"> 油性頭皮：</span
-            >洗頭後未滿一天，頭髮就可看到明顯油光，甚至頭髮變得扁塌不蓬鬆、油膩的條狀感，夏季時更可聞到自己
-            的頭氣味。<br />
-            <span class="fw-bold text-black"> 乾性頭皮：</span
-            >皮脂分泌較少，頭皮呈現過乾、粗糙現象，頭髮末梢因此缺乏油脂而呈現毛燥、打結及分岔的狀況。<br />
-            <span class="fw-bold text-black"> 敏感性頭皮：</span
-            >容易出現頭皮發癢、發紅的現象，過度搔癢後有可能抓傷頭皮。<br /><span
-              class="fw-bold text-black"
-            >
-              脂漏性頭皮：</span
-            >
-            局部皮脂分泌異常增大，常會伴隨頭皮屑的發生，頭皮易發癢、肩膀常有白色屑屑，穿黑衣服更是明顯。
-          </p>
-          <p>
-            確認好自己的頭皮種類了嗎？依據自己的頭皮狀況挑選時，記得再次確認產品成分表內是否添加頭皮膚質需求的對應成
-            分喔！溫和洗淨成分的甜菜鹼類與胺基酸類：成分溫和且起泡力較弱，相對頭皮肌膚不刺激，可使用於嬰幼兒的清潔洗
-            淨成分。
-          </p>
-          <p class="fw-bold" style="color: #cb9b78">
-            洗 SHAMPOO(含洗後順護乳) ---------- <span class="h4">$450</span>
-          </p>
-          <img class="w-100" src="./assets/img/shampoo.png" alt="shampoo" />
-          <p>
-            確認好自己的頭皮種類了嗎？依據自己的頭皮狀況挑選時，記得再次確認產品成分表內是否添加頭皮膚質需求的對應成
-            分喔！溫和洗淨成分的甜菜鹼類與胺基酸類：成分溫和且起泡力較弱，相對頭皮肌膚不刺激，可使用於嬰幼兒的清潔洗
-            淨成分。
-          </p>
-        </div>
-        <div
-          class="tab-pane"
-          id="profile"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane"
-          id="messages"
-          role="tabpanel"
-          aria-labelledby="messages-tab"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane"
-          id="settings"
-          role="tabpanel"
-          aria-labelledby="settings-tab"
-        >
-          ...
-        </div>
+      <div id="washHair" class="Hair">
+        <p>
+          沙龍級洗髮精主要主打添加對頭髮肌膚刺激少、抑制損傷、使用後頭髮較滋潤滑順的成分為主，像是對肌膚溫和且安全
+          性高的胺基酸等，與一般市售產品可能含酒精類的洗髮精不同。頭髮是死的組織，頭皮才是活的組織！頭皮的主要功能
+          在隔絕外在環境髒污，也可避免肌膚的水分過度蒸發。所以平常說的洗頭基本上是在洗頭皮喔！針對環境髒污及人體代
+          謝的廢棄物做清潔，注意不要過度清潔，才能保留正常頭皮的天然皮脂膜，以維持健康。
+        </p>
+        <p>
+          <span class="fw-bold text-black"> 油性頭皮：</span
+          >洗頭後未滿一天，頭髮就可看到明顯油光，甚至頭髮變得扁塌不蓬鬆、油膩的條狀感，夏季時更可聞到自己
+          的頭氣味。<br />
+          <span class="fw-bold text-black"> 乾性頭皮：</span
+          >皮脂分泌較少，頭皮呈現過乾、粗糙現象，頭髮末梢因此缺乏油脂而呈現毛燥、打結及分岔的狀況。<br />
+          <span class="fw-bold text-black"> 敏感性頭皮：</span
+          >容易出現頭皮發癢、發紅的現象，過度搔癢後有可能抓傷頭皮。<br /><span
+            class="fw-bold text-black"
+          >
+            脂漏性頭皮：</span
+          >
+          局部皮脂分泌異常增大，常會伴隨頭皮屑的發生，頭皮易發癢、肩膀常有白色屑屑，穿黑衣服更是明顯。
+        </p>
+        <p>
+          確認好自己的頭皮種類了嗎？依據自己的頭皮狀況挑選時，記得再次確認產品成分表內是否添加頭皮膚質需求的對應成
+          分喔！溫和洗淨成分的甜菜鹼類與胺基酸類：成分溫和且起泡力較弱，相對頭皮肌膚不刺激，可使用於嬰幼兒的清潔洗
+          淨成分。
+        </p>
+        <p class="fw-bold" style="color: #cb9b78">
+          洗 SHAMPOO(含洗後順護乳) ---------- <span class="h4">$450</span>
+        </p>
+        <img class="w-100" src="./assets/img/shampoo.png" alt="shampoo" />
+        <p>
+          確認好自己的頭皮種類了嗎？依據自己的頭皮狀況挑選時，記得再次確認產品成分表內是否添加頭皮膚質需求的對應成
+          分喔！溫和洗淨成分的甜菜鹼類與胺基酸類：成分溫和且起泡力較弱，相對頭皮肌膚不刺激，可使用於嬰幼兒的清潔洗
+          淨成分。
+        </p>
+      </div>  
+      <div id="cutHair" class="Hair" style="display: none">
+        <h2>敬請期待</h2>
+      </div>  
+      <div id="hairStyle" class="Hair" style="display: none">
+        <h2>敬請期待</h2>
+      </div>
+      <div id="permHair" class="Hair" style="display: none">
+        <h2>敬請期待</h2>
       </div>
     </div>
     <!-- 服務項目結束 -->
-
+    
+   
+    
     <!-- footer 部分 -->
     <div class="footer">
       <div class="footerBgVector">
@@ -273,20 +212,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const tabGroup = document.querySelectorAll(".tabGroup .tab");
-      const serviceContent = document.querySelectorAll(".serviceContent");
-      tabGroup.forEach((tab, index) => {
-        tab.addEventListener("click", function (e) {
-          tabGroup.forEach((tab) => {
-            tab.classList.remove("open");
-          });
-          e.target.classList.add("open");
-          serviceContent.forEach((content) => {
-            content.classList.remove("open");
-          });
-          serviceContent[index].classList.add("open");
-        });
-      });
+      function openHair(HairName) {
+        var i;
+        var x = document.getElementsByClassName("Hair");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(HairName).style.display = "block";
+      }
     </script>
   </body>
 </html>
