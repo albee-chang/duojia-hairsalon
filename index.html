@@ -18,7 +18,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
     <!-- 載入 KuroW00 Fonts -->
-    <link href="//db.onlinewebfonts.com/c/5cfbae91ba82e6689f76fdc43d9444b7?family=Kuro+W00+Medium" rel="stylesheet" type="text/css"/>
+    <link
+      href="//db.onlinewebfonts.com/c/5cfbae91ba82e6689f76fdc43d9444b7?family=Kuro+W00+Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/all.css" />
   </head>
@@ -67,9 +71,15 @@
                 >
               </li>
               <li class="nav-item">
-                <div class="nav-bar-icons"><i class="bi bi-person-fill text-white"></i>|<i class="bi bi-cart4"></i></div>
+                <div class="nav-bar-icons">
+                  <a href="./login.html"
+                    ><i class="bi bi-person-fill text-white"></i></a
+                  >|<a href="./shoppingCar.html"
+                    ><i class="bi bi-cart4 text-white"></i
+                  ></a>
+                </div>
                 <a class="nav-link" href="./shop.html" data-title="SHOP"
-                >線上商城</a
+                  >線上商城</a
                 >
               </li>
             </ul>
@@ -135,22 +145,30 @@
     <!-- 輪播結束 -->
     <!-- 線上商城以及服務項目 -->
     <div class="serviceArea">
-      <div class="MEMBER-Exclusive"> 
+      <div class="MEMBER-Exclusive">
         <div class="memberTitleEN">MEMBER EXCLUSIVE</div>
         <div class="memberTitleCH">會員獨享線上商城</div>
-        <a class="nk-btn main-btn sm-btn sendBtn" href="./shop.html" title="shop"><i class="rightArrow"></i></a>
+        <a
+          class="nk-btn main-btn sm-btn sendBtn"
+          href="./shop.html"
+          title="shop"
+          ><i class="rightArrow"></i
+        ></a>
         <div class="memberShopImg">
-          <img src="./assets/img/memberShop.png" alt="memberShop">
+          <img src="./assets/img/memberShop.png" alt="memberShop" />
         </div>
-        
       </div>
       <div class="serviceTitleEN">SERVICE</div>
       <div class="serviceTitleCH">服務與收費</div>
-      <a class="nk-btn main-btn sm-btn sendBtn2" href="./service.html" title="shop"><i class="rightArrow2"></i>
-        <button class="linkSquare"> </button>
+      <a
+        class="nk-btn main-btn sm-btn sendBtn2"
+        href="./service.html"
+        title="shop"
+        ><i class="rightArrow2"></i>
+        <button class="linkSquare"></button>
       </a>
       <div class="serviceImg">
-        <img src="./assets/img/hairSalon.png" alt="serviceImg">
+        <img src="./assets/img/hairSalon.png" alt="serviceImg" />
       </div>
       <div class="bg-color01">
         <img
@@ -171,29 +189,57 @@
     </div>
     <!-- 線上商城以及服務項目結束 -->
 
-<!-- NEWS -->
- <!-- footer 部分 -->
- <div class="newsFooter">
-  <div class="newsBgVector">
-    <div class="newsBg"></div>
-    <div class="footerLinkBg">
-      <div class="footerLogo">
-        <img src="./assets/img/footerLogo.png" alt="footerLogo" />
-      <div class="footerLink">
-        <a href="./index.html" title="Home">首頁</a>
-        <a href="./about.html" title="About">品牌故事</a>
-        <a href="./partner.html" title="Partner">相關企業</a>
-        <a href="./news.html" title="News">最新消息</a>
-        <a href="./shop.html" title="Shop">線上商城</a>
+    <!-- NEWS -->
+    <!-- footer 部分 -->
+    <div class="newsFooter">
+      <div class="newsBgVector">
+        <div class="newsBg"></div>
+        <div class="footerLinkBg">
+          <div class="footerLogo container">
+            <img src="./assets/img/footerLogo.png" alt="footerLogo" />
+            <div class="footerLink row">
+              <div class="footerShopInfo col-12 col-md-3">
+                <p class="text-start">
+                  <i class="bi bi-telephone-fill"></i> (07)216-2828
+                </p>
+                <p class="text-start">
+                  <i class="bi bi-geo-alt-fill"></i> 高雄市新興區民享街85-1號
+                </p>
+                <p class="text-start">
+                  <i class="bi bi-calendar-event"></i> 每周一店休
+                </p>
+              </div>
+              <div class="footerLinkList col-12 col-md-6 pb-2">
+                <a href="./about.html" title="About">品牌故事</a>
+                <a href="./service.html" title="Service">服務項目</a>
+                <a href="./partner.html" title="Partner">相關企業</a>
+                <a href="./news.html" title="News">最新消息</a>
+                <a href="./shop.html" title="Shop">線上商城</a>
+                <a href="./member.html" title="Member">會員中心</a>
+                <a href="./payment.html" title="Payment">付款說明</a>
+                <a href="./orders.html" title="Orders">歷史訂單</a>
+                <a href="./privacy.html" title="Privacy">隱私權說明</a>
+                <a href="./terms.html" title="Terms">會員註冊條款</a>
+              </div>
+              <div class="footerMap col-12 col-md-3 mt-3 mt-lg-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9971662877156!2d120.29346589999999!3d22.616581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e038093ffd537%3A0x1f9a3fc28c5ea31!2zODAyNDjpq5jpm4TluILoi5Ppm4XljYDmtbfpgorot68zMeiZnzI16Jmf!5e0!3m2!1szh-TW!2stw!4v1681746643963!5m2!1szh-TW!2stw"
+                  width="180"
+                  height="100"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerInfo">
+        2022 © 多加創意髮廊 Designed By 耘想科技網頁設計
       </div>
     </div>
-  </div>
-  <div class="footerInfo">
-    2022 © 多加創意髮廊 Designed By 耘想科技網頁設計
-  </div>
-</div>
-
-
 
     <!-- 載入 Bootstrap JS -->
     <script
@@ -203,12 +249,12 @@
     ></script>
     <!-- 設定輪播效果 -->
     <script>
-      const carousel = document.querySelector('.footer-carousel');
-const carouselInstance = new bootstrap.Carousel(carousel, {
-  interval: 2000,
-  wrap: true,
-  touch: true,
-});
+      const carousel = document.querySelector(".footer-carousel");
+      const carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: 2000,
+        wrap: true,
+        touch: true,
+      });
     </script>
   </body>
 </html>

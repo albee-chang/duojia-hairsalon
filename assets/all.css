@@ -112,14 +112,11 @@ nav {
 
 
 
-@media screen and (max-width: 900px) {
-}
-
 /* ---------footer 設定---------- */
 .footer {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
 }
 
 .footerBgVector img {
@@ -143,7 +140,7 @@ nav {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  font-family: "思源黑體";
+  font-family: "思源黑體","KuroW00", sans-serif;
   font-weight: 300;
   font-size: 12px;
   background-color: #67819b;
@@ -156,41 +153,82 @@ nav {
 .footerLinkBg {
   position: absolute;
   z-index: 2;
-  left: 10%;
   bottom: 0;
+  translate: 14%;
   font-family: "思源黑體";
   font-weight: 300;
   font-size: 12px;
   background-color: #c7936c;
   width: 80%;
-  height: 34%;
+  height: 60%;
   color: white;
-  margin: 0 auto;
   text-align: center;
   padding-top: 0.25rem;
   letter-spacing: 0.1rem;
   border-radius: 80px 80px 0 0;
+
 }
 .footerLink {
   padding-top: 4rem;
+  width: 100%;
+  height: 100%;
 }
 .footerLink a {
   color: white;
   text-decoration: none;
   font-family: "思源黑體";
   font-weight: 200;
-  font-size: 12px;
+  font-size: 14px;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 .footerLogo {
   position: relative;
 }
 .footerLogo img {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(20%, -50%);
   z-index: 2;
   top: -0.8rem;
   width: 128px;
   height: 128px;
   text-align: center;
-  letter-spacing: 0.1rem;
+}
+
+.footerShopInfo {
+  font-family: "思源黑體","KuroW00", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+/* --------- RWD調整 ---------- */
+@media screen and (max-width: 900px) {
+
+  .footerLink {
+    width: 100%;
+  }
+  .footerLink a {
+    color: white;
+    text-decoration: none;
+    font-family: "思源黑體";
+    font-weight: 200;
+    font-size: 14px;
+    margin: 0.3rem;
+  }
+  .footerLinkBg {
+    border-radius: 40px 40px 0 0;
+    height: 80%;
+  }
+  .footerLogo img {
+    position: absolute;
+    transform: translate(0%, -50%);
+    z-index: 2;
+    top: -0.8rem;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+  }
+  
 }
