@@ -90,7 +90,7 @@
 }
 
 .sendBtn .rightArrow:hover {
-  transform: skewX(66deg);
+  transform: skewX(65deg);
   transition: left 0.5s ease-out;
 }
 
@@ -152,10 +152,127 @@
   position: absolute;
   z-index: 1;
   bottom: 16%;
-  right: 15%;
+  right: 10%;
 }
+ /* ----------服務項目細節------------ */
+.serviceContent {
+  font-family: "KuroW00", sans-serif;
+  position: absolute;
+  z-index: 1;
+  bottom: 9%;
+  left: 10%;
+  width: 35%;
+  height: auto;
+}
+
+.serviceList {
+  margin-bottom: 1rem;
+}
+.listNum {
+  margin-left: -4%;
+  color:#67819b;
+}
+.listTitle {
+  color:#243a41;
+}
+.details {
+  font-family: "思源黑體";
+  font-weight: 200;
+  font-size: 10pt;
+  color:#243a41;
+}
+.price {
+  color:#67819b ;
+  letter-spacing: 0.1rem;
+}
+
+
 /* --------------最新消息區塊-------------- */
 /* ---------footer 設定---------- */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footerBgVector img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  mix-blend-mode: difference;
+}
+.footerBgColor {
+  background-color: #f4efea;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footerInfo {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: #67819b;
+  width: 100%;
+  height: 4%;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.footerLinkBg {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  translate: 14%;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: #c7936c;
+  width: 80%;
+  height: 60%;
+  color: white;
+  text-align: center;
+  padding-top: 0.25rem;
+  letter-spacing: 0.1rem;
+  border-radius: 80px 80px 0 0;
+}
+.footerLink {
+  padding-top: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.footerLink a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.footerLogo {
+  position: relative;
+}
+.footerLogo img {
+  position: absolute;
+  transform: translate(20%, -50%);
+  z-index: 2;
+  top: -0.8rem;
+  width: 128px;
+  height: 128px;
+  text-align: center;
+}
+
+.footerShopInfo {
+  font-weight: 300;
+  font-size: 14px;
+}
+
 .newsFooter {
   position: relative;
   width: 100%;
@@ -209,6 +326,9 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .serviceArea {
+    height: 2200px;
+  }
   .memberTitleCH {
     font-family: "思源黑體";
     font-weight: 400;
@@ -261,7 +381,7 @@
   .sendBtn2 .rightArrow2 {
     position: absolute;
     z-index: 2;
-    bottom: 38%;
+    bottom: 43%;
     right: 10%;
     border-width: 0 5px 3px 0;
     padding: 1px 120px 10px 12px;
@@ -321,5 +441,14 @@
     left: 2%;
     letter-spacing: 0.1rem;
     transition: 0.3s ease-out;
+  }
+  .serviceContent {
+    font-family: "KuroW00", sans-serif;
+    position: absolute;
+    z-index: 1;
+    bottom: 7%;
+    left: 8%;
+    width: 100%;
+    height: auto;
   }
 }
