@@ -1,0 +1,194 @@
+.memberArgBg {
+  position: relative;
+}
+
+.memberArgBg .memberArgBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentPageLine {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 5rem;
+}
+.logoTag {
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  left: 7%;
+  font-weight: 500;
+  font-size: 18px;
+  color: #243a41;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.memberArgTitleEN {
+  font-weight: 500;
+  font-size: 40pt;
+  color: #67819b;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 26%;
+  letter-spacing: 0.1rem;
+}
+
+.bg-color01 {
+  background-color: #ebe7d2;
+  width: 40vw;
+  height: 200px;
+  position: absolute;
+  margin-top: -120px;
+  right: 0%;
+  overflow: hidden;
+}
+
+.linear-gradient-01 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.memberArgBread-crumb {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 10%;
+  font-weight: 500;
+  font-size: 12px;
+  color: #243a41;
+  max-width: 100%;
+  max-height: 100%;
+  text-decoration: none;
+}
+.memberArgBread-crumb i {
+  color: white;
+  background-color: #243a41;
+  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+  border-radius: 50%;
+}
+
+/* --- main page ---- */
+
+.memberArgContainer {
+  width: 75%;
+  color: #828b8e;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+}
+
+.memberArgTitle {
+  color: #243a41;
+  font-size: 28px;
+}
+
+.memberArgTitle2 {
+  margin: 50px 0;
+  color: #243a41;
+  font-size: 40px;
+}
+
+.memberArgtext {
+  color: #707070;
+  font-weight: 300;
+  line-height: 1.25rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.memberArgform {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 288px;
+}
+
+.memberArgContentImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memberArgcheckbox {
+  padding: 0.3vh 4vw;
+  color: #243a41;
+  border: #243a41 2px solid;
+  font-size: 14px;
+}
+
+.memberArgbtn {
+  background-color: #c7936c;
+  color: white;
+  border: none;
+  padding: 0.3vh 4vw;
+}
+
+.memberArgbtn:hover {
+  background-color: #e0ab82;
+  color: white;
+  border: none;
+  padding: 0.3vh 4vw;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-color01 {
+    display: none;
+  }
+
+  .linear-gradient-01 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+  .memberArgBread-crumb {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    right: 10%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #243a41;
+    max-width: 100%;
+    max-height: 100%;
+    text-decoration: none;
+  }
+  .memberArgTitleEN {
+    font-weight: 500;
+    font-size: 30pt;
+    color: #67819b;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    top: 58%;
+    left: 25%;
+    letter-spacing: 0.1rem;
+  }
+  .contentPageLine {
+    display: none;
+  }
+  .logoTag {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 3%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #243a41;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .memberArgBread-crumb {
+    font-size: 10px;
+  }
+  .memberArgTags {
+    font-size: 14px;
+  }
+  .memberArgContainer {
+    width: 90%;
+    margin-top: 6rem;
+  }
+}

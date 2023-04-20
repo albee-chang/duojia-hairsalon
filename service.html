@@ -19,11 +19,13 @@
     />
     <!-- 載入 W3 CSS CDN -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <!-- 載入 KuroW00 Fonts -->
+
+    <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="//db.onlinewebfonts.com/c/5cfbae91ba82e6689f76fdc43d9444b7?family=Kuro+W00+Medium"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
     <link rel="stylesheet" href="./assets/css/service.css" />
     <link rel="stylesheet" href="./assets/all.css" />
@@ -73,9 +75,6 @@
                 >
               </li>
               <li class="nav-item">
-                <div class="nav-bar-icons">
-                  <a href="./login.html"><i class="bi bi-person-fill text-white"></i></a>|<a href="./shoppingCar.html"><i class="bi bi-cart4 text-white"></i></a>          
-                </div>
                 <a class="nav-link" href="./shop.html" data-title="SHOP"
                   >線上商城</a
                 >
@@ -119,17 +118,29 @@
     <div class="serviceContainer text-start">
       <h3 class="serviceTitle">服務項目</h3>
       <!-- Nav tabs -->
-      <div class="w3-bar">        
-        <button class="w3-bar-item w3-button w3-right" onclick="openHair('permHair')">
+      <div class="w3-bar">
+        <button
+          class="w3-bar-item w3-button w3-right"
+          onclick="openHair('permHair')"
+        >
           燙髮
         </button>
-        <button class="w3-bar-item w3-button w3-right" onclick="openHair('hairStyle')">
+        <button
+          class="w3-bar-item w3-button w3-right"
+          onclick="openHair('hairStyle')"
+        >
           造型
         </button>
-        <button class="w3-bar-item w3-button w3-right" onclick="openHair('cutHair')">
+        <button
+          class="w3-bar-item w3-button w3-right"
+          onclick="openHair('cutHair')"
+        >
           剪髮
         </button>
-        <button class="w3-bar-item w3-button w3-right open" onclick="openHair('washHair')">
+        <button
+          class="w3-bar-item w3-button w3-right open"
+          onclick="openHair('washHair')"
+        >
           洗髮
         </button>
       </div>
@@ -169,10 +180,10 @@
           分喔！溫和洗淨成分的甜菜鹼類與胺基酸類：成分溫和且起泡力較弱，相對頭皮肌膚不刺激，可使用於嬰幼兒的清潔洗
           淨成分。
         </p>
-      </div>  
+      </div>
       <div id="cutHair" class="Hair" style="display: none">
         <h2>敬請期待</h2>
-      </div>  
+      </div>
       <div id="hairStyle" class="Hair" style="display: none">
         <h2>敬請期待</h2>
       </div>
@@ -181,9 +192,7 @@
       </div>
     </div>
     <!-- 服務項目結束 -->
-    
-   
-    
+
     <!-- footer 部分 -->
     <div class="footer">
       <div class="footerBgVector">
