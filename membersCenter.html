@@ -17,13 +17,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <!-- 載入 KuroW00 Fonts -->
-    <link
-      href="//db.onlinewebfonts.com/c/5cfbae91ba82e6689f76fdc43d9444b7?family=Kuro+W00+Medium"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="./assets/css/story.css" />
+    <!-- 載入 W3 CSS CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./assets/css/members.css" />
     <link rel="stylesheet" href="./assets/all.css" />
   </head>
   <body>
@@ -50,13 +46,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="./story.html"
-                  >
+              <li class="nav-item">
+                <a class="nav-link" href="./story.html">
                   <p class="line1">品牌故事</p>
                   <p class="line2">ABOUT</p>
-                  </a
-                >
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./service.html"
@@ -65,12 +59,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./partner.html"
-                  >
+                <a class="nav-link" href="./partner.html">
                   <p class="line1">相關企業</p>
-<p class="line2">PARTNERS</p>
-                  </a
-                >
+                  <p class="line2">PARTNERS</p>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./news.html" data-title="NEWS"
@@ -98,8 +90,8 @@
       <div class="navbar-background"></div>
     </div>
     <!-- 導覽列結束 -->
-    <!-- 品牌故事 -->
-    <div class="storyBg">
+    <!-- 主要內容 -->
+    <div class="membersBg">
       <div class="bg-color01">
         <img
           class="linear-gradient-01"
@@ -108,49 +100,142 @@
           alt="linear-gradient"
         />
       </div>
-      <div class="storyTitleArea">
+      <div class="membersTitleArea">
         <img
           class="contentPageLine"
           src="./assets/img/contentPageLine_02.png"
-          alt="storyTitleArea"
+          alt="membersTitleArea"
         />
       </div>
-      <img class="storyBgImg" src="./assets/img/storyBg.png" alt="storyBgImg" />
+      <img
+        class="membersBgImg"
+        src="./assets/img/storyBg.png"
+        alt="storyBgImg"
+      />
       <div class="logoTag">DO PLUS</div>
-      <div class="storyTitleEN">ABOUT</div>
-      <div class="storyBread-crumb">
+      <div class="membersTitleEN">MEMBERS CENTER</div>
+      <div class="membersBread-crumb">
         <a href="./index.html" title="Home"><i class="bi bi-house-door"></i></a>
-        <span>/ 品牌故事</span>
+        <span>/ 會員中心</span>
       </div>
     </div>
-    <div class="storyContainer">
-      <h3 class="storyTitle">品牌故事</h3>
-      <div class="storyContent">
-        <p>
-          Do
-          Plus多加創藝髮廊成立至今，始終保持著「讓美麗生活化」的觀念，設計師把顧客當成朋友，並且持續精進剪髮
-          技術，著力將髮型設計做到最好，為每一個上門的客人找到最適合的風格，締造出自己的價值。
-          Do Plus Salon多加創藝髮廊
-          對於處在沙龍密集的區域來說，最為重要的就是顧客的口碑。
-          所以，讓所有顧客都得 到滿足就顯得尤為重要。 『Do
-          Plus』的目標是，永遠提供比上一次更令人感動的服務。對於新顧客則以技術優勢取
-          得信賴，從而使之成為忠實顧客。而對於老顧客則提供貼心服務等小細節來打動顧客的心。另外，不定期舉辦一些優惠
-          活動，來提高顧客來店的激情。同時店內還具備完善的教育環境，讓所有工作夥伴在實踐中學習更勝一籌的技術與待客
-          之道。
-        </p>
-        <img
-          class="storyContentImg my-5"
-          src="./assets/img/storyContentImg.png"
-          alt="storyContentImg"
-        />
-        <p>
-          Do
-          Plus多加創藝髮廊成立至今，始終保持著「讓美麗生活化」的觀念，設計師把顧客當成朋友，並且持續精進剪髮
-          技術，著力將髮型設計做到最好，為每一個上門的客人找到最適合的風格，締造出自己的價值。
-          Do Plus Salon多加創藝髮廊
-          對於處在沙龍密集的區域來說，最為重要的就是顧客的口碑。
-          所以，讓所有顧客都得 到滿足就顯得尤為重要。
-        </p>
+    <div class="membersContainer">
+      <h3 class="membersTitle fw-bold">會員中心</h3>
+      <!-- sidebar -->
+      <div class="membersContent d-flex w3-container row">
+        <div
+          class="w3-bar d-flex flex-column col-3"
+          style="width: 200px"
+        >
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'LatestMembers')"
+          >
+            會員中心
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'ShoppingCar')"
+          >
+            我的購物車
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'Orders')"
+          >
+            訂單查詢
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'FavoriteList')"
+          >
+            我的收藏清單
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'Payment')"
+          >
+            付款說明
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'HistoryOrders')"
+          >
+            歷史訂單
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'ReturnExchange')"
+          >
+            退換貨說明
+          </button>
+          <button
+            class="w3-bar-item w3-button tablink"
+            onclick="openMembers(event, 'Logout')"
+          >
+            登出
+          </button>
+        </div>
+        <!-- content -->
+        <div class="col-9">
+          <div
+            id="LatestMembers"
+            class="w3-container members"
+            style="display: block"
+          >
+            <h2>Members</h2>
+          </div>
+
+          <div
+            id="ShoppingCar"
+            class="w3-container members"
+            style="display: none"
+          >
+            <h2>ShoppingCar</h2>
+          </div>
+          <div
+            id="Orders"
+            class="w3-container members"
+            style="display: none"
+          >
+            <h2>Orders</h2>
+        </div>
+            <div
+                id="FavoriteList"
+                class="w3-container members"
+                style="display: none"
+            >
+                <h2>FavoriteList</h2>
+            </div>
+            <div
+                id="Payment"
+                class="w3-container members"
+                style="display: none"
+            >
+                <h2>Payment</h2>
+            </div>
+            <div
+                id="HistoryOrders"
+                class="w3-container members"
+                style="display: none"
+            >
+                <h2>HistoryOrders</h2>
+            </div>
+            <div
+                id="ReturnExchange"
+                class="w3-container members"
+                style="display: none"
+            >
+                <h2>ReturnExchange</h2>
+            </div>
+            <div
+                id="Logout"
+                class="w3-container members"
+                style="display: none"
+            >
+                <h2>Logout</h2>
+            </div>      
+        </div>
       </div>
     </div>
     <!-- 品牌故事結束 -->
@@ -224,7 +309,25 @@
       </div>
     </div>
     <!-- footer 部分結束 -->
-
+    <!-- 載入 tab function -->
+    <script>
+      function openMembers(evt, membersName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("members");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " w3-text-brown w3-border-bottom",
+            ""
+          );
+        }
+        document.getElementById(membersName).style.display = "block";
+        evt.currentTarget.className += " w3-text-brown w3-border-bottom";
+      }
+    </script>
     <!-- 載入 Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
