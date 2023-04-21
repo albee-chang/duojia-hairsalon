@@ -188,105 +188,7 @@
 
 
 /* --------------最新消息區塊-------------- */
-/* ---------footer 設定---------- */
-.footer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 
-.footerBgVector img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  mix-blend-mode: difference;
-}
-.footerBgColor {
-  background-color: #f4efea;
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-
-.footerInfo {
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  font-weight: 300;
-  font-size: 12px;
-  background-color: #67819b;
-  width: 100%;
-  height: 4%;
-  color: white;
-  text-align: center;
-  letter-spacing: 0.1rem;
-}
-.footerLinkBg {
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  translate: 14%;
-  font-weight: 300;
-  font-size: 12px;
-  background-color: #c7936c;
-  width: 80%;
-  height: 60%;
-  color: white;
-  text-align: center;
-  padding-top: 0.25rem;
-  letter-spacing: 0.1rem;
-  border-radius: 80px 80px 0 0;
-}
-.footerLink {
-  padding-top: 4rem;
-  width: 100%;
-  height: 100%;
-}
-.footerLink a {
-  color: white;
-  text-decoration: none;
-  font-weight: 200;
-  font-size: 14px;
-  margin: 0 1rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-.footerLogo {
-  position: relative;
-}
-.footerLogo img {
-  position: absolute;
-  transform: translate(20%, -50%);
-  z-index: 2;
-  top: -0.8rem;
-  width: 128px;
-  height: 128px;
-  text-align: center;
-}
-
-.footerShopInfo {
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.newsFooter {
-  position: relative;
-  width: 100%;
-  height: 450px;
-}
-
-.newsBg {
-  background-image: url("../img/newsBg.png");
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
 
 /* --------------響應式調整-------------- */
 
@@ -396,6 +298,18 @@
     height: auto;
     overflow: hidden;
     transition: 0.3s ease-out;
+  }
+  .bg-color01 {
+    background-color: #ebe7d2;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: -5%;
+
+  }  
+  .linear-gradient-01 {
+    position: absolute;
+    bottom: -20px;
   }
   .bg-color02 {
     background-color: #ececec80;

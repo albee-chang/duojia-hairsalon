@@ -128,7 +128,7 @@ a:hover {
 
 .triangle {
   margin-left: 5px;
-  font-size: 10px;
+  font-size: 6px;
   margin-top: 2px;
   position: absolute;
 }
@@ -197,83 +197,49 @@ a:hover {
 /* ---------導覽列 結束--------- */
 
 /* ---------footer 設定---------- */
-.footer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.footerBgVector img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: -100%;
-  mix-blend-mode: difference;
-}
-.footerBgColor {
-  background-color: #f4efea;
-  width: 100%;
-  height: 180%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-
-.footerInfo {
-  position: absolute;
-  z-index: 2;
-  font-weight: 300;
-  font-size: 12px;
+.footerDesign{
   background-color: #67819b;
-  width: 100%;
-  color: white;
   text-align: center;
-  letter-spacing: 0.1rem;
-}
-.footerLinkBg {
-  translate: 14%;
   font-weight: 300;
   font-size: 12px;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.footerBox {
+  position: relative;
   background-color: #c7936c;
-  width: 80%;
-  height: 60%;
+  border-radius: 80px 80px 0 0;
+  font-size: 12px;
   color: white;
   text-align: center;
-  padding-top: 0.25rem;
   letter-spacing: 0.1rem;
-  border-radius: 80px 80px 0 0;
+  padding-top: 80px;
 }
-.footerLink {
-  padding-top: 4rem;
-  width: 100%;
-  height: 100%;
+
+.footerContainer{
+  font-weight: 300;
+  font-size: 14px;
+  text-align: start;
+  margin-left: 96px;
+  margin-right: 96px;
+  padding-bottom: 48px;
 }
-.footerLink a {
+.footerShopInfo {
+  font-weight: 300;
+  font-size: 14px;
+}
+.footerNav a {
   color: white;
   text-decoration: none;
   font-weight: 200;
   font-size: 14px;
-  margin: 0 1rem;
   margin-bottom: 1rem;
   display: inline-block;
 }
-.footerLogo {
-  position: relative;
-}
-.footerLogo img {
-  position: absolute;
-  transform: translate(20%, -50%);
-  z-index: 2;
-  top: -0.8rem;
-  width: 128px;
-  height: 128px;
-  text-align: center;
-}
 
-.footerShopInfo {
-  font-weight: 300;
-  font-size: 14px;
+.footerMap{
+  text-align: end;
+  margin-top: -32px;
 }
 
 /* ---------footer 結束---------- */
@@ -343,10 +309,6 @@ a:hover {
     position: absolute;
   }
 
-  .bg-color01 {
-    display: none;
-  }
-
   .nav-bar-icon {
     position: absolute;
     top: 50%;
@@ -382,34 +344,7 @@ a:hover {
     position: absolute;
   }
 
-  .bg-color01 {
-    display: none;
-  }
-  .footerLink {
-    width: 100%;
-  }
-  .footerLink a {
-    color: white;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 14px;
-    margin: 0.3rem;
-  }
-  .footerLinkBg {
-    border-radius: 40px 40px 0 0;
-    height: 80%;
-  }
-  .footerLogo img {
-    position: absolute;
-    transform: translate(0%, -50%);
-    z-index: 2;
-    top: -0.8rem;
-    width: 128px;
-    height: 128px;
-    text-align: center;
-  }
-}
-
+  
 /* --------- nav 手機 --------- */
   .nav-bar-icon {
     position: absolute;
