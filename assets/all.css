@@ -264,6 +264,8 @@ a:hover {
   font-size: 14px;
 }
 
+/* ---------footer 結束---------- */
+
 /* --------- RWD調整 ---------- */
 @media screen and (max-width: 992px) {
   .dropdown .dropdown-menu li a {
@@ -332,6 +334,14 @@ a:hover {
   .bg-color01 {
     display: none;
   }
+
+  .nav-bar-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .footerLink {
     width: 100%;
   }
@@ -355,15 +365,9 @@ a:hover {
     height: 128px;
     text-align: center;
   }
-  .nav-bar-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
-/* --------- 手機 --------- */
+/* --------- nav 手機 --------- */
 @media screen and (max-width: 576px) {
   .navbar {
     padding-top: 20px;
