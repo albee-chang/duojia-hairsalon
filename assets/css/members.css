@@ -1,7 +1,8 @@
-.shopBg {
+.membersBg {
     position: relative;
+    height: 100%;
   }
-  .shopBg .shopBgImg {
+  .membersBg .membersBgImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -18,31 +19,32 @@
     z-index: 1;
     top: 18%;
     left: 7%;
-    font-family: "KuroW00", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #243a41;
     max-width: 100%;
     max-height: 100%;
   }
-  
-  .shopTitleEN {
+  .membersTitle {
+    color: #737d81;
+  }
+  .membersTitleEN {
     font-family: "KuroW00", sans-serif;
     font-weight: 500;
-    font-size: 40pt;
+    font-size: 25pt;
     color: #67819b;
     text-align: left;
     position: absolute;
     z-index: 1;
-    top: 20%;
-    left: 26%;
+    top: 25%;
+    left: 25%;
     letter-spacing: 0.1rem;
   }
   
   .bg-color01 {
     background-color: #ebe7d2;
     width: 25rem;
-    height: 8rem;
+    height: 10rem;
     position: absolute;
     top: -14%;
     right: 0%;
@@ -55,12 +57,11 @@
     left: 0;
   }
   
-  .shopBread-crumb {
+  .membersBread-crumb {
     position: absolute;
     z-index: 1;
     top: 35%;
     right: 10%;
-    font-family: "思源黑體";
     font-weight: 500;
     font-size: 12px;
     color: #243a41;
@@ -68,32 +69,57 @@
     max-height: 100%;
     text-decoration: none;
   }
-  .shopBread-crumb i {
+  .membersBread-crumb i {
     color: white;
     background-color: #243a41;
     padding: 0.1rem 0.3rem 0.2rem 0.3rem;
     border-radius: 50%;
   }
   
-  .shopContainer {
+  .membersContainer {
     width: 75%;
-    height: 80vh;
+    height: 160vh;
+    color: #828b8e;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
     margin: 0 auto;
   }
-  
-  .shopContentImg {
+  .membersContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .membersContentImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
+  .membersLogo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    margin:5rem 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .membersLogo  img {
+    max-width: 100%;
+  }
+  
+  
   @media screen and (max-width: 768px) {
     .bg-color01 {
       background-color: #ebe7d2;
       width: 100%;
-      height: 10rem;
+      height: 11rem;
       position: absolute;
-      top: 10%;
+      top: -14%;
       right: 0%;
       overflow: hidden;
     }
@@ -103,12 +129,11 @@
       bottom: -2px;
       left: 0;
     }
-    .shopBread-crumb {
+    .membersBread-crumb {
       position: absolute;
       z-index: 1;
-      top: 90%;
+      top: 65%;
       right: 3%;
-      font-family: "思源黑體";
       font-weight: 500;
       font-size: 12px;
       color: #243a41;
@@ -116,16 +141,16 @@
       max-height: 100%;
       text-decoration: none;
     }
-    .shopTitleEN {
+    .membersTitleEN {
       font-family: "KuroW00", sans-serif;
       font-weight: 500;
-      font-size: 30pt;
+      font-size: 25pt;
       color: #67819b;
       text-align: left;
       position: absolute;
       z-index: 1;
-      top: 90%;
-      left: 25%;
+      top: 80%;
+      left: 20%;
       letter-spacing: 0.1rem;
     }
     .contentPageLine {
@@ -134,7 +159,7 @@
     .logoTag {
       position: absolute;
       z-index: 1;
-      top: 90%;
+      top: 65%;
       left: 3%;
       font-family: "KuroW00", sans-serif;
       font-weight: 500;
@@ -143,18 +168,28 @@
       max-width: 100%;
       max-height: 100%;
     }
-    .shopBread-crumb {
+    .membersBread-crumb {
       font-size: 10px;
     }
-    .shopTags {
+    .membersTags {
       font-size: 14px;
     }
-    .shopContainer {
+    .membersContainer {
       width: 90%;
       margin-top: 6rem;
     }
-
+    .membersLogo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      margin-top: 5rem;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .membersContainer {
+      height: 100%;
+    }
   }
-  
-  
   
