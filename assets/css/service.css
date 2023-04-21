@@ -1,3 +1,4 @@
+
 .serviceBg {
   position: relative;
   height: 100%;
@@ -103,13 +104,10 @@
   border: none;
   background-color: none;
 }
-
-.open {
-  background-color: none;
+.w3-text-brown {
   color: #cb9b78;
-  border: none;
-  font-size: 16pt;
 }
+
 @media screen and (max-width: 768px) {
   .bg-color01 {
     background-color: #ebe7d2;
