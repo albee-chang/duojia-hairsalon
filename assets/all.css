@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: "KuroW00";
   src: url("./fonts/5cfbae91ba82e6689f76fdc43d9444b7.woff") format("woff"),
@@ -8,11 +9,13 @@ body {
   font-family: "KuroW00", "Noto Sans TC", sans-serif;
 }
 
+/* ---------導覽列 開始--------- */
 nav {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  z-index: 999;
   background-color: #c7936c;
   height: 122px;
 }
@@ -25,14 +28,15 @@ nav {
   height: 10vh;
   z-index: 999;
 }
+
 .navbar-background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: -300px;
   height: 64px;
   background-color: #243a41;
+  z-index: 1;
 }
 
 .nav-container {
@@ -266,6 +270,7 @@ a:hover {
   font-size: 14px;
 }
 
+/* ---------footer 結束---------- */
 
 /* --------- RWD調整 ---------- */
 @media screen and (max-width: 992px) {
@@ -335,6 +340,45 @@ a:hover {
   .bg-color01 {
     display: none;
   }
+
+  .nav-bar-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3.5%;
+  }
+
+  .active::before {
+    margin: 5% 2%;
+    content: "( ";
+    color: white;
+    right: 0;
+  }
+  .active::after {
+    margin: 5% 2%;
+    content: " ) ";
+    color: white;
+  }
+
+  .collapse {
+    margin: 0;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .bg-color01 {
+    display: none;
+  }
   .footerLink {
     width: 100%;
   }
@@ -358,6 +402,9 @@ a:hover {
     height: 128px;
     text-align: center;
   }
+}
+
+/* --------- nav 手機 --------- */
   .nav-bar-icon {
     position: absolute;
     top: 50%;
@@ -367,6 +414,7 @@ a:hover {
 }
 
 /* --------- 手機 --------- */
+
 @media screen and (max-width: 576px) {
   .navbar {
     padding-top: 20px;
