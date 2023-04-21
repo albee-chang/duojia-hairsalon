@@ -15,14 +15,14 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  z-index: 999;
+  z-index: 2;
   background-color: #c7936c;
   height: 122px;
 }
 
-.navbar {
+/* .navbar {
   z-index: 1;
-}
+} */
 .navbar>.container {
     display: flex;
     flex-wrap: inherit;
@@ -32,7 +32,7 @@ nav {
 .navbar-wrapper {
   position: relative;
   height: 10vh;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .navbar-background {
@@ -42,12 +42,11 @@ nav {
   right: 0;
   height: 64px;
   background-color: #243a41;
-/*   z-index: 1; */
 }
 
-.nav-container {
+/* .nav-container {
   --bs-gutter-x: 0;
-}
+} */
 
 .collapse {
   flex-grow: 0;
@@ -96,10 +95,11 @@ nav {
   text-align: center;
   letter-spacing: 0.3rem;
   position: absolute;
-  right: 0;
+  right: 5%;
   margin-right: 28px;
   top: 0;
   margin-top: 5px;
+
 }
 
 .nav-link {
@@ -192,6 +192,7 @@ a:hover {
   margin-top: 40px;
   margin-right: 40px;
   margin-bottom: 20px;
+  z-index: 9;
 }
 
 /* ---------導覽列 結束--------- */

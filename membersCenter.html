@@ -34,8 +34,8 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -91,7 +91,7 @@
                 </ul>
               </a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -105,13 +105,13 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">髮質分類</a>
+                  <a class="dropdown-item" href="./shop.html">髮質分類</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">問題頭皮</a>
+                  <a class="dropdown-item" href="./shop.html">問題頭皮</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">熱銷推薦</a>
+                  <a class="dropdown-item" href="./shop.html">熱銷推薦</a>
                 </li>
               </ul>
             </li>
@@ -201,19 +201,19 @@
           </button>
           <button
             class="w3-bar-item w3-button tablink"
-            onclick="openMembers(event, 'Logout')"
+            onclick="history.back()" value="Logout"
           >
             登出
           </button>
         </div>
         <!-- content -->
-        <div class="col-9">
+        <div class="col-9 membersCenter">
           <div
             id="LatestMembers"
             class="w3-container members"
             style="display: block"
           >
-            <h2>Members</h2>
+            <h2>會員中心</h2>
           </div>
 
           <div
@@ -242,29 +242,22 @@
                 class="w3-container members"
                 style="display: none"
             >
-                <h2>Payment</h2>
+                <h2>付款說明</h2>
             </div>
             <div
                 id="HistoryOrders"
                 class="w3-container members"
                 style="display: none"
             >
-                <h2>HistoryOrders</h2>
+                <h2>歷史訂單</h2>
             </div>
             <div
                 id="ReturnExchange"
                 class="w3-container members"
                 style="display: none"
             >
-                <h2>ReturnExchange</h2>
-            </div>
-            <div
-                id="Logout"
-                class="w3-container members"
-                style="display: none"
-            >
-                <h2>Logout</h2>
-            </div>      
+                <h2>退換貨說明</h2>
+            </div>    
         </div>
       </div>
     </div>
