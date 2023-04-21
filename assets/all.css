@@ -23,6 +23,12 @@ nav {
 .navbar {
   z-index: 1;
 }
+.navbar>.container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+}
 .navbar-wrapper {
   position: relative;
   height: 10vh;
