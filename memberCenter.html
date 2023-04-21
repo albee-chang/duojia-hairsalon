@@ -27,7 +27,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./assets/css/memberAgreement.css" />
+    <link rel="stylesheet" href="./assets/css/memberCenter.css
+    " />
     <link rel="stylesheet" href="./assets/all.css" />
   </head>
 
@@ -131,8 +132,9 @@
       </div>
     </nav>
     <!-- 導覽列結束 -->
+
     <!-- 服務項目 -->
-    <div class="memberArgBg">
+    <div class="memberCenterBg">
       <div class="bg-color01">
         <img
           class="linear-gradient-01"
@@ -141,79 +143,172 @@
           alt="linear-gradient"
         />
       </div>
-      <div class="memberArgTitleArea">
+      <div class="memberCenterTitleArea">
         <img
           class="contentPageLine"
           src="./assets/img/contentPageLine_02.png"
-          alt="memberArgTitleArea"
+          alt="memberCenterTitleArea"
         />
       </div>
       <img
-        class="memberArgBgImg"
+        class="memberCenterBgImg"
         src="./assets/img/storyBg.png"
         alt="storyBgImg"
       />
       <div class="logoTag">DO PLUS</div>
-      <div class="memberArgTitleEN">MEMBER AGREEMENT</div>
-      <div class="memberArgBread-crumb">
+      <div class="memberCenterTitleEN">MEMBER CENTER</div>
+      <div class="memberCenterBread-crumb">
         <a href="./index.html" title="Home"><i class="bi bi-house-door"></i></a>
-        <span>/ 會員註冊條款</span>
+        <span>/ 加入會員</span>
       </div>
-    </div>
-
-    <!------- main page ------->
-    <div class="memberArgContainer text-start">
-      <h3 class="memberArgTitle">會員註冊條款</h3>
-      <h3 class="memberArgTitle2">您同意以下會員註冊條款，已進行會員註冊程序</h3>
-      <ol class="memberArgtext">
-        <li>遵守中華民國相關法規及一切使用網際網路之國際慣例。</li>
-        <li>
-          商品下訂單尚未出貨前可以隨意更改訂單狀態，如修改訂單取消訂單(客製化商品除外)，一但出貨將無法取消交易。
-        </li>
-        <li>
-          會員保證願意承擔一切因個人行為而直接或間接導致的民事及刑事法律責任。
-        </li>
-        <li>
-          嚴禁惡意刪改、入侵、散播病毒或破壞本站之任何資料或頁面，否則將承擔所有法律責任。
-        </li>
-        <li>會員若有任何問題與爭議，本站保留最終裁決權利。</li>
-        <li>
-          會員若蓄意觸犯上述任何一項條例，本站將立即處以停權處份，並追究相關法律責任。
-        </li>
-        <li>本公司有權利中止取消您的重複可疑訂單。</li>
-      </ol>
-      <form class="memberArgform">
-        <div class="memberArgcheckbox">
-          <input type="checkbox" id="checkbox" name="checkbox" />
-          <label for="checkbox">我已經詳細閱讀並同意</label>
-        </div>
-        <input class="memberArgbtn" type="submit" value="下一步" />
-      </form>
     </div>
     <!-- 服務項目結束 -->
 
-    <!-- footer 部分 -->
-    <!-- <div class="footer">
+    <!------- main page ------->
+    <div class="memberCenterContainer text-start">
+
+      <h3 class="memberCenterTitle">加入會員</h3>
+
+      <form>
+        <h3 class="formTitle">帳號資料</h3>
+        <div class="mb-2 ps-3">
+          <label for="username" class="form-label">會員帳號</label>
+          <input type="text" id="username" name="username" class="form-control" minlength="6" maxlength="20" pattern="[a-zA-Z0-9]+" title="請輸入6到20個英文字母或數字" placeholder="請輸入會員帳號" required/>
+        </div>
+    
+        <div class="mb-2 ps-3">
+          <label for="password" class="form-label">密碼</label>
+          <input type="password" id="password" name="password" class="form-control" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}" title="請輸入8到20個英文字母、數字和符號(!@#$%^&*()_+)的組合" placeholder="請輸入密碼" required/>
+        </div>
+    
+        <div class="mb-2 ps-3">
+          <label for="confirm_password" class="form-label">確認密碼</label>
+          <input type="password" id="confirm_password" name="confirm_password" class="form-control" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}" title="請輸入相同的密碼" placeholder="請再次輸入相同密碼" required/>
+        </div>
+
+        <h3 class="formTitle">基本資料</h3>
+
+        <div class="mb-2 ps-3">
+          <label for="name" class="form-label">姓名</label>
+          <input type="text" id="name" name="name" class="form-control" required maxlength="50" placeholder="請輸入姓名"/>
+        </div>
+          
+        <div class="mb-2 ps-3">
+          <label class="form-label">性別</label><br>
+          <input type="radio" id="male" name="gender" value="male" class="btn-check" autocomplete="off" required />
+          <label for="male" class="btn btn-outline-success">先生</label>
+          <input type="radio" id="female" name="gender" value="female" autocomplete="off" class="btn-check" />
+          <label for="female" class="btn btn-outline-success">小姐</label>
+        </div>
+          
+          <div class="mb-2 ps-3">
+            <label for="birthday" class="form-label">生日</label>
+            <input type="date" id="birthday" name="birthday" class="form-control" max="2005-01-01" required />
+          </div>
+          
+          <h3 class="formTitle">聯絡資訊</h3>
+
+          <div class="mb-2 ps-3">
+            <label for="phone" class="form-label">手機號碼</label>
+            <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{10}" title="請輸入10位數字的手機號碼" required placeholder="請輸入手機號碼"/>
+          </div>
+          
+          <div class="mb-2 ps-3">
+            <label for="contact" class="form-label">連絡電話</label>
+            <input type="tel" id="contact" name="contact" class="form-control" pattern="[0-9]{8}" title="請輸入8位數字的連絡電話" placeholder="請輸入聯絡電話"/>
+          </div>
+
+          <div class="mb-2 ps-3">
+            <label for="county" class="form-label" role="tw-city-selector" data-bootstrap-style data-has-zipcode >寄送地址</label>
+            <div class="city-selector-set form-group">
+              <select id="county" class="county form-select" name="county" data-value="高雄市" placeholder="請輸入聯絡電話"></select>
+              <select id="district" class="district form-select" name="district" data-value="苓雅區"></select>
+              <input id="zipcode" class="zipcode form-control mb-2" name="zipcode" type="text" size="3" readonly placeholder="郵遞區號" title="選擇縣市、區域後會自動帶入郵遞區號，不用自己填寫" disabled >
+              <input id="address" type="text" class="form-control" name="address" title="請填寫地址" placeholder="海邊路31號" required>
+            </div>
+          </div>
+          
+          <div class="checkBox ps-3">
+            <div class="memberCenertCheckbox">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox">我已經詳細閱讀並同意「會員註冊條款」</label>
+            </div>
+            <input class="memberCenertBtn" type="submit" value="下一步" />
+          </div>
+          <span class="ps-3 memberCenertText">勾選同意條款，才能完成會員申請!</span>
+        </form>
+    </div>
+
+      <!-- footer 部分 -->
+    <div class="footer">
       <div class="footerBgVector">
         <img src="./assets/img/footerVector.png" alt="footerBgVector" />
       </div>
       <div class="footerBgColor"></div>
       <div class="footerLinkBg">
-        <div class="footerLogo">
+        <div class="footerLogo container">
           <img src="./assets/img/footerLogo.png" alt="footerLogo" />
-          <div class="footerLink">
-            <a href="./index.html" title="Home">首頁</a>
-            <a href="./about.html" title="About">品牌故事</a>
-            <a href="./partner.html" title="Partner">相關企業</a>
-            <a href="./news.html" title="News">最新消息</a>
-            <a href="./shop.html" title="Shop">線上商城</a>
+          <div class="footerLink row">
+            <div class="footerShopInfo col-12 col-md-3">
+              <p class="text-start">
+                <i class="bi bi-telephone-fill"></i> (07)216-2828
+              </p>
+              <p class="text-start">
+                <i class="bi bi-geo-alt-fill"></i> 高雄市新興區民享街85-1號
+              </p>
+              <p class="text-start">
+                <i class="bi bi-calendar-event"></i> 每周一店休
+              </p>
+            </div>
+            <div class="footerLinkList col-12 col-md-6 pb-2">
+              <a href="./story.html" title="About">品牌故事</a>
+              <a href="./service.html" title="Service">服務項目</a>
+              <a href="./partner.html" title="Partner">相關企業</a>
+              <a href="./news.html" title="News">最新消息</a>
+              <a href="./shop.html" title="Shop">線上商城</a>
+              <a href="./memberCenter.html" title="Member">會員中心</a>
+              <a href="./payment.html" title="Payment">付款說明</a>
+              <a href="./orders.html" title="Orders">歷史訂單</a>
+              <a href="./privacyPolicy.html" title="Privacy">隱私權說明</a>
+              <a href="./terms.html" title="Terms">會員註冊條款</a>
+              <a href="#" title="facebookLink"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"
+                  alt="facebookLink"
+                  style="height: 19px; width: 19px"
+              /></a>
+              <a href="#" title="facebookLink"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                  alt="facebookLink"
+                  style="height: 19px; width: 19px"
+              /></a>
+              <a href="#" title="facebookLink"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/92/LINE_APP_Logo.png"
+                  alt="facebookLink"
+                  style="height: 19px; width: 19px"
+              /></a>
+            </div>
+            <div class="footerMap col-12 col-md-3 mt-3 mt-lg-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9971662877156!2d120.29346589999999!3d22.616581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e038093ffd537%3A0x1f9a3fc28c5ea31!2zODAyNDjpq5jpm4TluILoi5Ppm4XljYDmtbfpgorot68zMeiZnzI16Jmf!5e0!3m2!1szh-TW!2stw!4v1681746643963!5m2!1szh-TW!2stw"
+                width="180"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
       <div class="footerInfo">
         2022 © 多加創意髮廊 Designed By 耘想科技網頁設計
       </div>
-    </div> -->
+    </div>
+    <!-- footer 部分結束 -->
 
     <!-- 載入 Bootstrap JS -->
     <script>
@@ -231,5 +326,16 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- 台灣縣市 | 來源:https://github.com/dennykuo/tw-city-selector -->
+    <script src="./assets/js/tw-city-selector.js"></script>
+    <script>
+        new TwCitySelector({
+          el: '.city-selector-set',
+          elCounty: '.county', // 在 el 裡查找 element
+          elDistrict: '.district', // 在 el 裡查找 element
+          elZipcode: '.zipcode' // 在 el 裡查找 element
+        });
+    </script>
   </body>
 </html>
