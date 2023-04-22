@@ -7,9 +7,9 @@
     <title>多加創意髮廊</title>
     <!-- 載入 Bootstrap CDN -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
     <!-- 載入 Bootstrap icon CDN -->
@@ -31,11 +31,11 @@
           ><img src="./assets/img/logo.png" alt="Logo圖片"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapseList"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -91,7 +91,7 @@
                 </ul>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -364,6 +364,48 @@
           </div>
           <div id="Payment" class="w3-container members" style="display: none">
             <h2>付款說明</h2>
+            <ol>
+              <li>
+                <h5>貨到付款</h5>
+                <p>
+                  宅配人員將您所訂購的貨物送達指定地點，直接支付款項給宅配人員即可。
+                  <br />
+                  ※ 此服務需加收40元宅配人員代收費用。
+                </p>
+              </li>
+              <li>
+                <h5>7-11 門市取貨付款</h5>
+                <p>
+                  您可指定 7-11
+                  到店取貨付款，因材積限制到店取貨付款的單筆訂單最高金額為 4000
+                  元，如超過此金額僅能宅配到府或拆開成兩訂單，同時當商品送達您指定之
+                  7-11
+                  門市時，將會發送簡訊通知您，待商品到貨後至門市取貨時直接付款即可。
+                </p>
+              </li>
+              <li>
+                <h5>信用卡線上刷卡</h5>
+                <p>
+                  使用為綠界科技刷卡系統，信用卡類型（VISA、MasterCard、JCB、銀聯卡
+                  UnionPay card）皆可使用。 <br />
+                  ※
+                  訂單成立之後請於一小時內進行付款作業，否則系統會自動取消沒有收到款項的訂單，不會另行通知
+                  ※
+                </p>
+              </li>
+              <li>
+                <h5>ATM 虛擬帳戶匯款</h5>
+                <p>
+                  完成結帳時將取得當次訂單的專屬虛擬帳號（請確認務必取得繳費帳號），取得帳號後於一日內前完成轉帳，若未能完成；系統便會自動取消您此次訂單。
+                  ATM
+                  虛擬帳戶匯款一筆訂單只會產生一組獨特匯款號碼，安全性更好，請放心使用。
+                  <br />
+                  ※
+                  系統將會於訂單資訊處顯示匯款期限，若未能於期限內完成轉帳或未取得繳費帳號，系統將自動取消您該次的訂單，不會另行通知
+                  ※
+                </p>
+              </li>
+            </ol>
           </div>
           <div
             id="HistoryOrders"
@@ -374,12 +416,12 @@
             <table class="table table-striped table-hover">
               <thead>
                 <tr>
-                  <th style="width: 16%;" scope="col">訂單日期</th>
-                  <th style="width: 16%;" scope="col">訂單編號</th>
-                  <th style="width: 16%;" scope="col">付款方式</th>
-                  <th style="width: 16%;" scope="col">訂單金額</th>
-                  <th style="width: 18%;" scope="col">訂單狀態</th>
-                  <th style="width: 18%;" scope="col">付款狀態</th>
+                  <th style="width: 16%" scope="col">訂單日期</th>
+                  <th style="width: 16%" scope="col">訂單編號</th>
+                  <th style="width: 16%" scope="col">付款方式</th>
+                  <th style="width: 16%" scope="col">訂單金額</th>
+                  <th style="width: 18%" scope="col">訂單狀態</th>
+                  <th style="width: 18%" scope="col">付款狀態</th>
                 </tr>
               </thead>
               <tbody>
@@ -459,19 +501,38 @@
             style="display: none"
           >
             <h2>退換貨說明</h2>
-            <ol>以下事項請您於退貨前詳閱，以利快加退貨的處理時效：
-              <li>鑑賞期非試用期，我們提供顧客於7天鑑賞期間的購物猶豫權利。惟由於本店商品皆屬個人肌膚護理用產品，商品一經拆封概不受理退貨。</li>
-              <li>以上退貨商品系指商品有重大瑕疵：如寄錯商品、商品瓶身破損、內容物明顯變質或其他本店認定可退貨之情況等，方可辦理退貨。退貨的商品請必須保持商品本體、原廠內外包裝、配件、贈品、及附隨文件或資料的完整性，切勿缺漏任何配件，退貨前建議您可先拍照留存。</li>
-              <li>請您以原包裝紙盒將商品妥當包裝後退貨。若紙盒已丟棄，請另使用其他安全的包裝方式包覆商品，以免商品毀損造成無法判斷是否為正確的可退貨原因。</li>
-              <li>若為組合商品，需【整筆】訂單辦理退貨，請恕無法單獨退回部分商品。　</li>
-              <li>未經退貨申請程序而逕自寄回商品，本店將拒收且無法辦理退款。</li>
-              <li>特殊商品如：即期商品、NG商品、或特價商品一經售出後恕不受理退貨。</li>
-              <li>鑑賞期說明：根據消費者保護法之規定，本公司將提供您享有商品到貨次日起算7天鑑賞期的權益，但此期間是提供您評估是否購買該商品，並非提供您試用該商品。</li>
-              <li>若有因商品在正常使用形況下導致的身體不適或損傷，請立即就醫並與我們聯繫，且妥善保存就醫紀錄與收據等資料。我們接獲通知後，將盡力協助顧客釐清商品問題與相關就醫事宜，並將委請保險公司協助相關責任與賠償。賠償方案與金額，本公司將全權委由保險公司依專業判斷與調查處理之。</li>
+            <ol>
+              以下事項請您於退貨前詳閱，以利快加退貨的處理時效：
+              <li>
+                鑑賞期非試用期，我們提供顧客於7天鑑賞期間的購物猶豫權利。惟由於本店商品皆屬個人肌膚護理用產品，商品一經拆封概不受理退貨。
+              </li>
+              <li>
+                以上退貨商品系指商品有重大瑕疵：如寄錯商品、商品瓶身破損、內容物明顯變質或其他本店認定可退貨之情況等，方可辦理退貨。退貨的商品請必須保持商品本體、原廠內外包裝、配件、贈品、及附隨文件或資料的完整性，切勿缺漏任何配件，退貨前建議您可先拍照留存。
+              </li>
+              <li>
+                請您以原包裝紙盒將商品妥當包裝後退貨。若紙盒已丟棄，請另使用其他安全的包裝方式包覆商品，以免商品毀損造成無法判斷是否為正確的可退貨原因。
+              </li>
+              <li>
+                若為組合商品，需【整筆】訂單辦理退貨，請恕無法單獨退回部分商品。　
+              </li>
+              <li>
+                未經退貨申請程序而逕自寄回商品，本店將拒收且無法辦理退款。
+              </li>
+              <li>
+                特殊商品如：即期商品、NG商品、或特價商品一經售出後恕不受理退貨。
+              </li>
+              <li>
+                鑑賞期說明：根據消費者保護法之規定，本公司將提供您享有商品到貨次日起算7天鑑賞期的權益，但此期間是提供您評估是否購買該商品，並非提供您試用該商品。
+              </li>
+              <li>
+                若有因商品在正常使用形況下導致的身體不適或損傷，請立即就醫並與我們聯繫，且妥善保存就醫紀錄與收據等資料。我們接獲通知後，將盡力協助顧客釐清商品問題與相關就醫事宜，並將委請保險公司協助相關責任與賠償。賠償方案與金額，本公司將全權委由保險公司依專業判斷與調查處理之。
+              </li>
             </ol>
-            <p>以上退貨或其他相關問題，若有任何疑問，
-              
-              歡迎先來信客服信箱service@xxx.com 諮詢，我們將於2個工作天內盡快回復您。</p>
+            <p>
+              以上退貨或其他相關問題，若有任何疑問，
+              歡迎先來信客服信箱service@xxx.com
+              諮詢，我們將於2個工作天內盡快回復您。
+            </p>
           </div>
         </div>
       </div>
@@ -586,8 +647,13 @@
     </script>
     <!-- 載入 Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
   </body>
