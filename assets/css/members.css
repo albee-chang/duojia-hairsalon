@@ -88,7 +88,7 @@
   color: #828b8e;
   line-height: 2rem;
   letter-spacing: 0.1rem;
-  margin: 0 auto;
+  margin: auto auto;
 }
 .membersContent {
   display: flex;
@@ -96,6 +96,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin: auto auto;
 }
 .membersContentImg {
   width: 100%;
@@ -343,15 +344,21 @@ tr {
   text-align: center;
 }
 
+.input-group .btn {
+  z-index: 0;
+}
+
 .trash {
   cursor: pointer;
+  color: black;
 }
 
 .trash:hover {
-  color: #fcc977;
+  color: darkred;
 }
 
 /* --- shoppingCar-table end --- */
+
 .all-page-title {
   background: #ebe7d2;
   line-height: 1.5rem;
@@ -421,4 +428,99 @@ tr {
   background-color: #e0ab82;
   color: white;
   border: none;
+}
+
+/* --------- RWD調整 ---------- */
+
+@media screen and (max-width: 992px) {
+  .shoppingCar-icon-list {
+    margin: 0;
+  }
+
+  .shoppingCar-icon {
+    padding: 0.5rem 0.5rem;
+    margin: 10px;
+  }
+
+  .shoppingCar-line {
+    display: none;
+  }
+
+  .w3-container,
+  .w3-panel {
+    padding: 0;
+  }
+
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+    border-top: 1px solid rgba(196, 196, 196, 0.3);
+  }
+
+  table td {
+    border-bottom: 1px;
+    display: block;
+  }
+
+  table td::before {
+    position: absolute;
+    left: 10px;
+    content: attr(data-label);
+  }
+
+  table tr td:last-child {
+    color: #c7936c;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+  }
+
+  .shoppingCar-table td img {
+    height: 15vw;
+  }
+
+  .memberArgbtn {
+    padding: 0.6vh 3vw;
+  }
+
+  .shoppingCar-info select {
+    font-size: 14px;
+  }
+
+  .col-5 {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+/* --------- 手機 --------- */
+
+@media screen and (max-width: 576px) {
+  .shoppingCar-info {
+    margin: 150px 0 0 0;
+  }
+
+  .shoppingCar-icon-list {
+    justify-content: center;
+  }
+
+  .shoppingCar-info-btn {
+    display: block;
+  }
+
+  .memberArgbtn {
+    width: 100%;
+    padding: 1vh 3vw;
+    margin: 0.5rem;
+  }
 }
