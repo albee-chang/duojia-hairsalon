@@ -271,6 +271,9 @@ a:hover {
 }
 
 /* ---------footer 設定---------- */
+footer {
+  margin-top: 80px;
+}
 .footerDesign {
   background-color: #67819b;
   text-align: center;
@@ -387,6 +390,9 @@ a:hover {
   }
   .contentPageLine {
     display: none;
+  }
+  footer {
+    margin-top: 80px;
   }
   .footerBox {
     border-radius: 60px 60px 0 0;

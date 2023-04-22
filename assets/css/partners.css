@@ -45,7 +45,6 @@
 
 .partnersContainer {
   width: 75%;
-  height: 160vh;
   color: #828b8e;
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -125,8 +124,5 @@
     margin-top: 5rem;
     padding-left: 2%;
     padding-right: 2%;
-  }
-  .partnersContainer {
-    height: 100%;
   }
 }

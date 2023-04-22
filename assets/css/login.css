@@ -42,8 +42,7 @@
 }
 
 .loginContainer {
-  width: 53%;
-  height: 150vh;
+  width: 75%;
   color: #828b8e;
   line-height: 2rem;
   letter-spacing: 0.2rem;
@@ -158,17 +157,10 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1205px) {
-  .loginContainer {
-    width: 90%;
-    margin-top: 6rem;
-  }
-}
+
 
 @media screen and (max-width: 700px) {
-  .loginContainer {
-    height: 220vh;
-  }
+
   .loginBox {
     /* height: 220vh; */
     display: grid;

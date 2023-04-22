@@ -43,7 +43,6 @@
 
 .shopContainer {
   width: 75%;
-  height: 210vh;
   margin: 0 auto;
 }
 .shopContent {
@@ -319,7 +318,6 @@ select {
   }
   .shopContainer {
     width: 100%;
-    height: 550vh;
     margin: 0 auto;
   }
   .shopBread-crumb {
