@@ -41,116 +41,76 @@ nav {
   background-color: #243a41;
 }
 
-.collapse {
-  flex-grow: 0;
+/* nav fixed */
+.line1 {
+  color: #243a41;
+  margin-bottom: 20px;
 }
 
-.navbar-brand img {
-  width: 80%;
+.triangle {
+  margin-left: 8px;
 }
 
-.navbar-nav li {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+.navbar-expand-lg {
+  padding-bottom: 24px;
 }
 
-.dropdown-toggle {
-  margin-top: -50px;
+.navBar {
+  background-color: #c7936c;
 }
 
-.dropdown-toggle::after {
-  display: none;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
-}
-
-.nav-item {
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  margin-top: 10px;
+  z-index: 2;
+  background-color: #c7936c;
 }
 
 .nav-bar-icons {
-  width: 4.3rem;
-  height: 1.5rem;
   background-color: #243a41;
   color: #c9ced0;
   border-radius: 2rem;
   text-align: center;
-  letter-spacing: 0.3rem;
   position: absolute;
-  right: 5%;
-  margin-right: 28px;
   top: 0;
-  margin-top: 5px;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.nav-bar-icons a {
+  text-decoration: none;
+}
+.nav-bar-icons i {
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
-  margin-top: 2px;
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  line-height: 0.2;
-  text-align: center;
+.iconLine {
+  border: solid 2px #c7936c;
 }
 
-a {
-  background-color: transparent;
+.nav-item {
+  margin: 56px 32px 0px 32px;
 }
-
-a:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in;
-}
-
-.nav-bar-icons:hover {
+.nav-item:hover {
   transform: scale(1.1);
 }
-
-.triangle {
-  margin-left: 5px;
-  font-size: 6px;
-  margin-top: 2px;
-  position: absolute;
-}
-
-.line1 {
+.nav-item:hover .nav-link {
+  font-weight: bold;
   color: #243a41;
 }
-
-.line2 {
-  color: white;
+.nav-item:hover .line1 {
+  color: #ebe7d2;
 }
-
-.show {
-  text-align: center;
-}
-
-.dropdown-card {
-  padding: 0;
-}
-
-.dropdown .dropdown-menu li a {
-  margin-top: -20%;
-  line-height: 2rem;
-}
-
-.dropdown-menu[data-bs-popper] {
+.nav-item:hover .dropdown-menu {
+  display: block;
   color: white;
   top: 85%;
-  left: unset;
+  text-align: center;
   background-color: rgba(123, 144, 163, 0.8);
   border-top: #243a41 8px solid;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -159,33 +119,44 @@ a:hover {
   animation-timing-function: ease;
 }
 
-.dropdown-item {
-  color: white;
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #243a41;
+  background-color: #ebe7d2;
 }
 
-.active {
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ebe7d2;
+  margin-top: 2px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.active::before {
-  margin: 0 0.25rem;
-  content: "( ";
-  color: white;
-  right: 0;
-}
-.active::after {
-  margin: 0 0.25rem;
-  content: " ) ";
-  color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  word-wrap: break-word;
+  line-height: 0.2;
 }
 
-.navbar-toggler {
-  margin-top: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  z-index: 9;
+.triangle {
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+
+.brackets {
+  display: none;
+}
+
+.navbar .active .brackets {
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #ebe7d2;
+}
+.navbar .active .line2 {
+  margin-left: 20.66px;
+}
+.navbar .active .triangle {
+  margin-left: unset;
+  color: #243a41;
 }
 
 .w3-button {
@@ -205,7 +176,14 @@ a:hover {
   font-size: 16px;
 }
 /* ---------導覽列 結束--------- */
+a {
+  background-color: transparent;
+}
 
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
 /* 內頁背景色塊位置 */
 .bg-color01 {
   background-color: #ebe7d2;
@@ -348,148 +326,38 @@ a:hover {
 
 /* --------- RWD調整 ---------- */
 @media screen and (max-width: 992px) {
-  .dropdown .dropdown-menu li a {
-    margin-top: -5%;
-  }
-
-  .navbar-toggler {
-    margin-top: 2%;
-  }
-  .navbar-brand img {
-    margin-top: -5%;
-    width: 60%;
-  }
-  .navbar-nav {
-    padding-bottom: 1%;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 0;
-    margin-top: -5px;
-  }
-
-  .navbar-brand,
-  .navbar-toggler {
-    position: relative;
-  }
-
-  .nav-bar-icons {
-    position: absolute;
-    top: 8%;
-    transform: translate(150%, -10%);
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-  }
-
-  .active {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: -3.5%;
-  }
-
-  .active::before {
-    margin: 5% 2%;
-    content: "( ";
-    color: white;
-    right: 0;
-  }
-  .active::after {
-    margin: 5% 2%;
-    content: " ) ";
-    color: white;
-  }
-
-  .collapse {
-    margin: 0;
-  }
-
-  .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-  .nav-bar-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .active {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: -3.5%;
-  }
-
-  .active::before {
-    margin: 5% 2%;
-    content: "( ";
-    color: white;
-    right: 0;
-  }
-  .active::after {
-    margin: 5% 2%;
-    content: " ) ";
-    color: white;
-  }
-
-  .collapse {
-    margin: 0;
-  }
-
-  .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-  /* --------- nav 手機 --------- */
-  .nav-bar-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* --------- 手機 --------- */
-
-@media screen and (max-width: 576px) {
-  .navbar {
-    padding-top: 20px;
-    height: 8vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
   .nav-container {
     background-color: #c7936c;
   }
-
-  .navbar-toggler {
-    margin-right: 20px;
-  }
-
   .nav-bar-icons {
-    padding-top: 2px;
-    width: 6rem;
-    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2rem;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    justify-content: space-around;
-    animation-name: fade-in;
-    animation-name: slide-down;
-    animation-duration: 1s;
-    animation-timing-function: ease;
+    position: unset;
+    margin: 16px 16px 0 16px;
+    padding: 8px;
   }
-  .nav-bar-icons i {
-    padding: 5px 10px 0 10px;
+  .iconLine {
+    border: solid 2px #c7936c;
   }
-/* -------背景色塊手機版--------- */
+  .nav-item {
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .nav-link {
+    align-items: center;
+  }
+  .nav-item:hover .dropdown-menu {
+    position: absolute;
+  }
+  .navbar .active .line2 {
+    margin-left: unset;
+  }
+  .nav-bar-icons a:hover {
+    color: white;
+  }
+  /* -------背景色塊手機版--------- */
   .bg-color01 {
     background-color: #ebe7d2;
     width: 100%;
@@ -542,3 +410,4 @@ a:hover {
     opacity: 1;
   }
 }
+

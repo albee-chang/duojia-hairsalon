@@ -33,7 +33,7 @@
   <body>
     <!-- 導覽列 -->
     <div class="navbar-background"></div>
-    <nav class="navbar navbar-expand-lg" style="background-color: #c7936c">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container nav-container">
         <a class="navbar-brand" href="./index.html"
           ><img src="./assets/img/logo.png" alt="Logo圖片"
@@ -52,66 +52,73 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0"
-            style="background-color: #c7936c"
           >
-            <div class="nav-bar-icons">
-              <a href="./login.html">
-                <i class="bi bi-person-fill text-white"></i></a
-              >|<a href="./shoppingCar.html"
-                ><i class="bi bi-cart4 text-white"></i
-              ></a>
-            </div>
             <li class="nav-item">
               <a class="nav-link" href="./story.html">
-                <p class="line1">品牌故事</p>
+                <p class="line1"><span class="brackets">(</span>品牌故事<span class="brackets">)</span></p>
                 <p class="line2">ABOUT</p></a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./service.html">
-                <p class="line1">服務項目</p>
-                <p class="line2">SERVER</p></a
-              >
-            </li>
+            <li class="nav-item d-flex flex-row">
+                <a class="nav-link"
+                href="./service.html"><p class="line1"><span class="brackets">(</span>服務項目<span class="brackets">)</span></p> <p class="line2">SERVER</p></a>
+                <a 
+                class="nav-link"
+                href="./service.html">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-card">
+                      <a class="dropdown-item" href="./service.html">洗髮</a>
+                    </li>
+                    <li class="dropdown-card">
+                      <a class="dropdown-item" href="./service.html">剪髮</a>
+                    </li>
+                    <li class="dropdown-card">
+                      <a class="dropdown-item" href="./service.html">染髮</a>
+                    </li>
+                    <li class="dropdown-card">
+                      <a class="dropdown-item" href="./service.html">造型</a>
+                    </li>
+                    <li class="dropdown-card">
+                      <a class="dropdown-item" href="./service.html">燙髮</a>
+                    </li>
+                  </ul>
+              </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./partner.html">
-                <p class="line1">相關企業</p>
+                <p class="line1"><span class="brackets">(</span>相關企業<span class="brackets">)</span></p>
                 <p class="line2">PARTNERS</p></a
               >
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                ><p class="line1">最新消息<span class="triangle">▼</span></p>
-                <p class="line2">NEWS</p>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="dropdown-card">
-                    <a class="dropdown-item" href="./news.html">最新消息</a>
-                  </li>
-                  <li class="dropdown-card">
-                    <a class="dropdown-item" href="./news.html">優惠活動</a>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <p class="line1">線上商城<span class="triangle">▼</span></p>
-                <p class="line2">SHOP</p>
+            <li class="nav-item d-flex flex-row">
+              <a class="nav-link"
+              href="./news.html"><p class="line1"><span class="brackets">(</span>最新消息<span class="brackets">)</span></p><p class="line2">NEWS</p></a>
+              <a 
+              class="nav-link"
+              href="./news.html"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-card">
+                  <a class="dropdown-item" href="./news.html">最新消息</a>
+                </li>
+                <li class="dropdown-card">
+                  <a class="dropdown-item" href="./news.html">優惠活動</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex flex-row active">
+              <a class="nav-link"
+              href="./shop.html"><p class="line1"><span class="brackets">(</span>線上商城<span class="brackets">)</span></p> <p class="line2">SHOP</p></a>
+              <a 
+              class="nav-link"
+              href="https://www.google.com">
+              </a>
+              <ul class="dropdown-menu">
                 <li class="dropdown-card">
                   <a class="dropdown-item" href="./shop.html">髮質分類</a>
                 </li>
@@ -123,6 +130,14 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-bar-icons">
+              <a href="./login.html"><i class="bi bi-person-fill text-white"></i><span class="d-inline d-lg-none"> 登入 </span>
+                </a
+              ><span class="iconLine"></span>
+              <a href="./shoppingCar.html"
+                ><i class="bi bi-cart4 text-white"></i
+              ><span class="d-inline d-lg-none"> 購物車 </span></a>
+                </li>
           </ul>
         </div>
       </div>
