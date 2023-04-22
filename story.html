@@ -42,7 +42,7 @@
           ><img src="./assets/img/logo.png" alt="Logo圖片"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapseList"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -70,10 +70,32 @@
                 <p class="line2">ABOUT</p></a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./service.html">
+            <li class="nav-item  dropdown">
+              <a href="#"
+              class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <p class="line1">服務項目</p>
-                <p class="line2">SERVER</p></a
+                <p class="line2">SERVER</p>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-card">
+                    <a class="dropdown-item" href="./service.html">洗髮</a>
+                  </li>
+                  <li class="dropdown-card">
+                    <a class="dropdown-item" href="./service.html">剪髮</a>
+                  </li>
+                  <li class="dropdown-card">
+                    <a class="dropdown-item" href="./service.html">染髮</a>
+                  </li>
+                  <li class="dropdown-card">
+                    <a class="dropdown-item" href="./service.html">造型</a>
+                  </li>
+                  <li class="dropdown-card">
+                    <a class="dropdown-item" href="./service.html">燙髮</a>
+                  </li>
+                </ul></a
               >
             </li>
             <li class="nav-item">
@@ -90,14 +112,14 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                ><p class="line1">最新消息<span class="triangle">▼</span></p>
+                ><p class="line1">最新消息</p>
                 <p class="line2">NEWS</p>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li class="dropdown-card">
-                    <a class="dropdown-item" href="#">最新消息</a>
+                    <a class="dropdown-item" href="./news.html">最新消息</a>
                   </li>
                   <li class="dropdown-card">
-                    <a class="dropdown-item" href="#">優惠活動</a>
+                    <a class="dropdown-item" href="./news.html">優惠活動</a>
                   </li>
                 </ul>
               </a>
@@ -111,18 +133,18 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <p class="line1">線上商城<span class="triangle">▼</span></p>
+                <p class="line1">線上商城</p>
                 <p class="line2">SHOP</p>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">髮質分類</a>
+                  <a class="dropdown-item" href="./shop.html">髮質分類</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">問題頭皮</a>
+                  <a class="dropdown-item" href="./shop.html">問題頭皮</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">熱銷推薦</a>
+                  <a class="dropdown-item" href="./shop.html">熱銷推薦</a>
                 </li>
               </ul>
             </li>
@@ -130,7 +152,6 @@
         </div>
       </div>
     </nav>
-    <!-- 導覽列結束 -->
     <!-- 導覽列結束 -->
     <!-- 品牌故事 -->
     <div class="storyBg">

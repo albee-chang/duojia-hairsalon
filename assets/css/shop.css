@@ -161,12 +161,14 @@ background-color: #243a41;
 color: white;
 padding: 0.3rem 0.5rem 0.2rem 0.5rem;
 border-radius: 50%;
+
 }
 .collect:hover {
 background-color: #c7936c;
 color: white;
 padding: 0.3rem 0.5rem;
 border-radius: 50%;
+
 }
 
 /* ----------產品列表---------- */
@@ -186,9 +188,11 @@ letter-spacing: 0.1rem;
 .product:hover {
 background-image: url(../img/productsHoverBg.png);
 background-size: cover;
+transition: all 0.5s;
 transform: scale(1.1);
 text-align: center;
-padding: 0.5rem;
+padding: 0.5rem 2rem;
+border-radius: 1rem;
 height: 100%;
 z-index: 2;
 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);

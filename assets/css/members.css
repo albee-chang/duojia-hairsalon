@@ -119,7 +119,38 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+/* ---------會員中心內頁區塊----------- */
+.memberBaseTitle{
+  background: #ebe7d2; 
+  color: #566565;
+  display: inline-block;
+}
 
+.memberBaseHead{
+  margin-top: 23px; 
+  margin-left: 2px; 
+  display: inline-block;
+}
+
+.fieldHead{
+  margin-top: 19px;
+  margin-left: 1%;
+}
+
+.dataField{
+  margin-top: 19px;
+  width:91%;
+  height:31px;
+  background-color: #f2f2f2;
+  border: 0px;
+  float:right;
+}
+
+
+label {
+  display: block;
+  float: left;
+}
 @media screen and (max-width: 768px) {
   .bg-color01 {
     background-color: #ebe7d2;
