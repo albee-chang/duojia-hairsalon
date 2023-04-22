@@ -112,48 +112,6 @@
   width: 50%;
   margin: 0.5rem auto;
 }
-/* 隱藏所有內容區塊 */
-.tabcontent {
-  display: none;
-}
-
-/* 樣式化 tab 按鈕 */
-.tab button.tablinks {
-  background-color: #eee;
-  color: #333;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* 當選擇的時候改變樣式 */
-.tab button.tabOpen {
-  background-color: #333;
-  color: #fff;
-}
-
-/* 樣式化子選單區塊 */
-.tabcontent .sub-tab button.sub-tablinks {
-  background-color: #fff;
-  color: #333;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* 當選擇的時候改變樣式 */
-.tabcontent .sub-tab button.tabOpen {
-  background-color: #333;
-  color: #fff;
-}
-
-/* 當 tab 內容可見時 */
-.tabcontent.tabOpen {
-  display: block;
-}
-
 
 /* -------arrow-------- */
 .sendBtn i {

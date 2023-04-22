@@ -1,3 +1,9 @@
+.w3-container {
+  width: 100%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+
 .membersBg {
   position: relative;
   height: 100%;
@@ -86,7 +92,9 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 /* ---------會員中心內頁區塊----------- */
+
 .memberBaseTitle {
   background: #ebe7d2;
   color: #566565;
@@ -186,4 +194,173 @@ label {
   .membersContainer {
     height: 100%;
   }
+}
+
+/* ---------購物車內頁區塊----------- */
+
+.shoppingCar-icon-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+
+.shoppingCar-icon-box {
+  justify-self: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.shoppingCar-icon {
+  padding: 2rem 2rem;
+  background-color: #243a41;
+  border-radius: 100%;
+}
+
+.shoppingCar-line {
+  border-left: 1.5px solid black;
+  height: 30%;
+  margin-left: 4.3rem;
+}
+
+/* --- shoppingCar-table start --- */
+
+.shoppingCar-table-Container {
+  position: relative;
+  width: 100%;
+}
+
+.shoppingCar-table {
+  margin-top: 10%;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+}
+
+.shoppingCar-table thead {
+  background: #ebe7d2;
+  color: #566565;
+  line-height: 1rem;
+}
+
+.shoppingCar-table td img {
+  margin-top: 10px;
+  height: 6vw;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none;
+}
+
+.shoppingCar-table-Container p {
+  position: absolute;
+  right: 0;
+  color: #243a41;
+}
+
+.shoppingCar-table-Container .shoppingCar-total {
+  color: #c7936c;
+  margin-left: 2rem;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.orange {
+  color: #c7936c;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.input-group,
+.form-control {
+  background-color: #f2f2f2;
+  border: none;
+  margin: 0;
+  text-align: center;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: #fcc977;
+}
+
+/* --- shoppingCar-table end --- */
+.all-page-title {
+  background: #ebe7d2;
+  line-height: 1.5rem;
+  color: #566565;
+  text-align: center;
+}
+
+.shoppingCar-info {
+  margin: 150px 0 100px 0;
+}
+
+.shoppingCar-info select {
+  background-color: #f2f2f2;
+  color: #566565;
+  font-size: 16px;
+  border: none;
+  padding: 8px 0px 8px 20px;
+}
+
+.shoppingCar-info select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0099ff;
+}
+
+.shoppingCar-payment-text {
+  line-height: 1.5rem;
+  font-size: 12px;
+  margin: 1rem;
+}
+
+.shoppingCar-info-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.subtotal-price-total {
+  font-size: 22px;
+  color: #c7936c;
+}
+
+.shoppingCar-info-text .promotion {
+  display: block;
+  width: 50%;
+  font-size: 14px;
+  line-height: 1.25rem;
+  color: #243a41;
+}
+
+.shoppingCar-info-btn {
+  display: flex;
+  justify-content: end;
+  margin: 5px;
+}
+
+.memberArgbtn {
+  background-color: #243a41;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 1vh 4vw;
+  margin-left: 1rem;
+  font-size: 14px;
+}
+
+.memberArgbtn:hover {
+  background-color: #e0ab82;
+  color: white;
+  border: none;
 }
