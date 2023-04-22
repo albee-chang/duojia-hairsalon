@@ -169,7 +169,10 @@
 }
 
 /* ----------產品列表---------- */
-
+.product {
+  text-decoration: none;
+  list-style: none;
+}
 .productsTitle {
   font-family: "Noto Sans TC", sans-serif;
   color: #243a41;
@@ -182,6 +185,13 @@
   font-weight: 100;
   letter-spacing: 0.1rem;
 }
+.product p {
+  color: #30454a;
+}
+.product del {
+  color: #30454a;
+}
+
 .product:hover {
   background-image: url(../img/productsHoverBg.png);
   background-size: cover;
@@ -218,8 +228,8 @@
 }
 /* ----------單一產品頁面-------- */
 .productDetailImg {
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
   object-fit: cover;
   border-radius: 5%;
   margin-bottom: 1rem;
@@ -296,9 +306,16 @@ select {
 
 
 @media screen and (max-width: 768px) {
+  .productDetailImg {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 3rem;
+  }
   .shopContainer {
     width: 100%;
-    height: 380vh;
+    height: 550vh;
     margin: 0 auto;
   }
   .bg-color01 {

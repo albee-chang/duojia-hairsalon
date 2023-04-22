@@ -153,12 +153,9 @@
       <h3 class="membersTitle fw-bold">會員中心</h3>
       <!-- sidebar -->
       <div class="membersContent d-flex w3-container row">
-        <div
-          class="w3-bar d-flex flex-column col-3"
-          style="width: 200px"
-        >
+        <div class="w3-bar d-flex flex-column col-3" style="width: 200px">
           <button
-            class="w3-bar-item w3-button tablink  w3-text-brown w3-border-bottom"
+            class="w3-bar-item w3-button tablink w3-text-brown w3-border-bottom"
             onclick="openMembers(event, 'LatestMembers')"
           >
             會員中心
@@ -201,7 +198,8 @@
           </button>
           <a
             class="w3-bar-item w3-button tablink"
-            href="./index.html" value="Logout"
+            href="./index.html"
+            value="Logout"
           >
             登出
           </a>
@@ -214,30 +212,32 @@
             style="display: block"
           >
             <!-- <h2>會員中心</h2> -->
-            <b style="color:#566565; ">會員中心 &nbsp;&nbsp; members@gmail.com</b>
-            
-            <div style="background: #ebe7d2; color: #566565; margin-top: 15px;">
-              <b style="margin-left: 2em;">基本資料</b> 
-              <span style="float: right; margin-right: 23px; ">
-              <img
-              src="./assets/img/editData.png"
-              style="vertical-align: middle"
-              />
-              <b type="button" style="margin-right:23px;">編輯</b>
-              <img
-              src="./assets/img/changPassword.png"
-              style="vertical-align: middle"
-              />
-              <b type="button">變更密碼</b>
+            <b style="color: #566565"
+              >會員中心 &nbsp;&nbsp; members@gmail.com</b
+            >
+            <div style="background: #ebe7d2; color: #566565; margin-top: 15px">
+              <b style="margin-left: 2em">基本資料</b>
+              <span style="float: right; margin-right: 23px">
+                <img
+                  src="./assets/img/editData.png"
+                  style="vertical-align: middle"
+                />
+                <b type="button" style="margin-right: 23px">編輯</b>
+                <img
+                  src="./assets/img/changPassword.png"
+                  style="vertical-align: middle"
+                />
+                <b type="button">變更密碼</b>
               </span>
             </div>
-            
-            
-            <label class="fieldHead" for="name">姓名</label><input id="name" class="dataField"   type="text" value="" />    
-            <label class="fieldHead" for="mobile">手機</label><input id="mobile" class="dataField"   type="number" value="" />
-            <label class="fieldHead" for="phone">電話</label><input id="phone" class="dataField"   type="number" value="" />
-            <label class="fieldHead" for="address">地址</label><input id="address" class="dataField"   type="text" value="" />
-                  
+            <label class="fieldHead" for="name">姓名</label
+            ><input id="name" class="dataField" type="text" value="" />
+            <label class="fieldHead" for="mobile">手機</label
+            ><input id="mobile" class="dataField" type="number" value="" />
+            <label class="fieldHead" for="phone">電話</label
+            ><input id="phone" class="dataField" type="number" value="" />
+            <label class="fieldHead" for="address">地址</label
+            ><input id="address" class="dataField" type="text" value="" />
           </div>
 
           <div
@@ -247,41 +247,232 @@
           >
             <h2>ShoppingCar</h2>
           </div>
+          <div id="Orders" class="w3-container members" style="display: none">
+            <h2>訂單查詢</h2>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th style="width: 16%" scope="col">訂單日期</th>
+                  <th style="width: 16%" scope="col">訂單編號</th>
+                  <th style="width: 16%" scope="col">付款方式</th>
+                  <th style="width: 16%" scope="col">訂單金額</th>
+                  <th style="width: 18%" scope="col">訂單狀態</th>
+                  <th style="width: 18%" scope="col">付款狀態</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/21/2022</td>
+                  <td>UD19340</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td class="flex-column">
+                    尚未寄件
+                    <div class="cancelBtn btn">取消訂單</div>
+                  </td>
+                  <td class="flex-column">
+                    尚未寄件
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12/16/2022</td>
+                  <td>TR30819</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11/05/2022</td>
+                  <td>OW30483</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10/22/2022</td>
+                  <td>YE34920</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10/11/2022</td>
+                  <td>RO29137</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>09/04/2022</td>
+                  <td>FI49020</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>08/30/2022</td>
+                  <td>KW03349</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td class="flex-column">
+                    付款完成
+                    <div class="cancelBtn btn">詳細資料</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div aria-label="Page navigation">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled"></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"></li>
+              </ul>
+            </div>
+          </div>
           <div
-            id="Orders"
+            id="FavoriteList"
             class="w3-container members"
             style="display: none"
           >
-            <h2>Orders</h2>
-        </div>
-            <div
-                id="FavoriteList"
-                class="w3-container members"
-                style="display: none"
-            >
-                <h2>FavoriteList</h2>
+            <h2>FavoriteList</h2>
+          </div>
+          <div id="Payment" class="w3-container members" style="display: none">
+            <h2>付款說明</h2>
+          </div>
+          <div
+            id="HistoryOrders"
+            class="w3-container members"
+            style="display: none"
+          >
+            <h2>歷史訂單</h2>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th style="width: 16%;" scope="col">訂單日期</th>
+                  <th style="width: 16%;" scope="col">訂單編號</th>
+                  <th style="width: 16%;" scope="col">付款方式</th>
+                  <th style="width: 16%;" scope="col">訂單金額</th>
+                  <th style="width: 18%;" scope="col">訂單狀態</th>
+                  <th style="width: 18%;" scope="col">付款狀態</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/21/2022</td>
+                  <td>UD19340</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>12/16/2022</td>
+                  <td>TR30819</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>11/05/2022</td>
+                  <td>OW30483</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>10/22/2022</td>
+                  <td>YE34920</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>10/11/2022</td>
+                  <td>RO29137</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>09/04/2022</td>
+                  <td>FI49020</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+                <tr>
+                  <td>08/30/2022</td>
+                  <td>KW03349</td>
+                  <td>線上刷卡</td>
+                  <td class="ordersPrice">$ 7,458</td>
+                  <td>已出貨</td>
+                  <td>付款完成</td>
+                </tr>
+              </tbody>
+            </table>
+            <div aria-label="Page navigation">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled"></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"></li>
+              </ul>
             </div>
-            <div
-                id="Payment"
-                class="w3-container members"
-                style="display: none"
-            >
-                <h2>付款說明</h2>
-            </div>
-            <div
-                id="HistoryOrders"
-                class="w3-container members"
-                style="display: none"
-            >
-                <h2>歷史訂單</h2>
-            </div>
-            <div
-                id="ReturnExchange"
-                class="w3-container members"
-                style="display: none"
-            >
-                <h2>退換貨說明</h2>
-            </div>    
+          </div>
+          <div
+            id="ReturnExchange"
+            class="w3-container members"
+            style="display: none"
+          >
+            <h2>退換貨說明</h2>
+            <ol>以下事項請您於退貨前詳閱，以利快加退貨的處理時效：
+              <li>鑑賞期非試用期，我們提供顧客於7天鑑賞期間的購物猶豫權利。惟由於本店商品皆屬個人肌膚護理用產品，商品一經拆封概不受理退貨。</li>
+              <li>以上退貨商品系指商品有重大瑕疵：如寄錯商品、商品瓶身破損、內容物明顯變質或其他本店認定可退貨之情況等，方可辦理退貨。退貨的商品請必須保持商品本體、原廠內外包裝、配件、贈品、及附隨文件或資料的完整性，切勿缺漏任何配件，退貨前建議您可先拍照留存。</li>
+              <li>請您以原包裝紙盒將商品妥當包裝後退貨。若紙盒已丟棄，請另使用其他安全的包裝方式包覆商品，以免商品毀損造成無法判斷是否為正確的可退貨原因。</li>
+              <li>若為組合商品，需【整筆】訂單辦理退貨，請恕無法單獨退回部分商品。　</li>
+              <li>未經退貨申請程序而逕自寄回商品，本店將拒收且無法辦理退款。</li>
+              <li>特殊商品如：即期商品、NG商品、或特價商品一經售出後恕不受理退貨。</li>
+              <li>鑑賞期說明：根據消費者保護法之規定，本公司將提供您享有商品到貨次日起算7天鑑賞期的權益，但此期間是提供您評估是否購買該商品，並非提供您試用該商品。</li>
+              <li>若有因商品在正常使用形況下導致的身體不適或損傷，請立即就醫並與我們聯繫，且妥善保存就醫紀錄與收據等資料。我們接獲通知後，將盡力協助顧客釐清商品問題與相關就醫事宜，並將委請保險公司協助相關責任與賠償。賠償方案與金額，本公司將全權委由保險公司依專業判斷與調查處理之。</li>
+            </ol>
+            <p>以上退貨或其他相關問題，若有任何疑問，
+              
+              歡迎先來信客服信箱service@xxx.com 諮詢，我們將於2個工作天內盡快回復您。</p>
+          </div>
         </div>
       </div>
     </div>

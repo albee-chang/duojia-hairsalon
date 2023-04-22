@@ -234,6 +234,28 @@ a:hover {
   border:1px solid #ca9a74;
   transform:rotate(45deg) translateX(-150%) translateY(220%);
 }
+
+/* ------------Pagination---------- */
+.pagination {
+  margin: 4rem;
+  
+}
+.pagination li a{
+  border: none;
+  background-color: none;
+  color: #67819b;
+  font-size: 1.5rem;
+  padding: 2 1rem;
+}
+.page-item.active .page-link {
+  background-image: url(../img/paginationBg.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  color: #67819b;
+  font-size: 1.5rem;
+}
+
 /* ---------footer 設定---------- */
 .footerDesign {
   background-color: #67819b;

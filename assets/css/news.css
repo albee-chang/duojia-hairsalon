@@ -109,29 +109,9 @@
   border-radius: 5rem 0 5rem 5rem;
 }
 
-/* ------------Pagination---------- */
-.pagination {
-  margin: 4rem;
-  
-}
-.pagination li a{
-  border: none;
-  background-color: none;
-  color: #67819b;
-  font-size: 1.5rem;
-  padding: 2 1rem;
-}
-.page-item.active .page-link {
-  background-image: url(../img/paginationBg.png);
-  background-size: cover;
-  background-position: center;
-  background-color: white;
-  color: #67819b;
-  font-size: 1.5rem;
-}
+
  /* ----------news 文章內頁----------- */
 .news-article {
-  font-family: 'Noto Sans TC', sans-serif;
   color: #707070; 
   font-weight: 100;
   letter-spacing: 0.1rem;
