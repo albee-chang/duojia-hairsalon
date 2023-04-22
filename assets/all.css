@@ -339,9 +339,8 @@ a:hover {
 
   .nav-bar-icons {
     position: absolute;
-    top: 10%;
-    left: 0;
-    margin: auto;
+    top: 8%;
+    transform: translate(150%, -10%);
     animation-name: fade-in;
     animation-duration: 1s;
     animation-timing-function: ease;
