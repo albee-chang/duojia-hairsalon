@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "KuroW00", "Noto Sans TC", sans-serif;
+  font-family: "KuroW00",  sans-serif;
 }
 
 /* ---------導覽列 開始--------- */
@@ -113,6 +113,7 @@ a {
 
 a:hover {
   transform: scale(1.1);
+  transition: all 0.5s ease-in;
 }
 
 .nav-bar-icons:hover {
@@ -206,6 +207,33 @@ a:hover {
 }
 /* ---------導覽列 結束--------- */
 
+/* -------arrow-------- */
+.sendBtn i {
+  border: solid #ca9a74;
+  display: inline-block;
+}
+.sendBtn .rightArrow {
+  border-width: 0 3px 2px 0;
+  padding: 1px 90px 5px 5px;
+  transform: skewX(60deg);
+}
+.sendBtn .leftArrow {
+  border-width: 0 0 1px 3px;
+  padding: 4px 70px 1px 11px;
+  transform: skewX(-60deg);
+}
+.sendBtn .box1 {
+  width:40px;
+  height:40px;
+  border:2px solid #ca9a74;
+  transform:rotate(45deg) translateX(-2%) translateY(70%);
+}
+.sendBtn .box2 {
+  width:40px;
+  height:40px;
+  border:1px solid #ca9a74;
+  transform:rotate(45deg) translateX(-150%) translateY(220%);
+}
 /* ---------footer 設定---------- */
 .footerDesign {
   background-color: #67819b;

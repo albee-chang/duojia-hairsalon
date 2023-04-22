@@ -185,8 +185,8 @@
 .product:hover {
   background-image: url(../img/productsHoverBg.png);
   background-size: cover;
-  transition: all 0.5s;
-  transform: scale(1.1);
+  transition: all 1s ease;
+  transform: scale(1);
   text-align: center;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -210,8 +210,97 @@
   color: #c7936c;
   cursor: pointer;
 }
+.productsBtns {
+  display: none;
+}
+.product:hover .productsBtns {
+  display: block;
+}
+/* ----------單一產品頁面-------- */
+.productDetailImg {
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+}
+.productDetailImg img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.singleProductImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.singleProductImg:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+select {
+  border: none;
+  background-color: #e7e7e7;
+  text-align: center;
+}
+.addToCartBtn {
+  background-color: #c7936c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  width: 48%;
+}
+.addToCollectBtn {
+  background-color: #243a41;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  width: 48%;
+}
+.addToCartBtn:hover {
+  background-color: #99653a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+}
+.addToCollectBtn:hover {
+  background-color: #3b606b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+}
+.productDescription {
+  color: #707070;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+
 
 @media screen and (max-width: 768px) {
+  .shopContainer {
+    width: 100%;
+    height: 380vh;
+    margin: 0 auto;
+  }
   .bg-color01 {
     background-color: #ebe7d2;
     width: 100%;
