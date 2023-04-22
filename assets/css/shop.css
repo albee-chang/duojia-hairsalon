@@ -84,122 +84,131 @@
   color: #243a41;
 }
 .shopImg {
-width: 100%;
-height: 390px;
-object-fit: cover;
-border-radius: 5%;
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 5%;
 }
 .shopLinkA {
-width: 100%;
-height: auto;
-letter-spacing: 0.1rem;
-transform: translate(-5%, 50%);
+  width: 100%;
+  height: auto;
+  letter-spacing: 0.1rem;
+  transform: translate(-5%, 50%);
 }
 .shopLinkB {
-width: 100%;
-height: auto;
-letter-spacing: 0.1rem;
-transform: translate(10%, 60%);
+  width: 100%;
+  height: auto;
+  letter-spacing: 0.1rem;
+  transform: translate(10%, 60%);
 }
 .dateTags {
-width: 100px;
-height: 30px;
-background-color: #c7936c;
-color: white;
-border-radius: 5rem 0 5rem 5rem;
+  width: 100px;
+  height: 30px;
+  background-color: #c7936c;
+  color: white;
+  border-radius: 5rem 0 5rem 5rem;
 }
 /* -------arrow-------- */
 .sendBtn i {
-border: solid #ca9a74;
-display: inline-block;
+  border: solid #ca9a74;
+  display: inline-block;
 }
 .sendBtn .rightArrow {
-border-width: 0 3px 2px 0;
-padding: 1px 90px 5px 5px;
-transform: skewX(60deg);
+  border-width: 0 3px 2px 0;
+  padding: 1px 90px 5px 5px;
+  transform: skewX(60deg);
 }
 .sendBtn .box {
-width:40px;
-height:40px;
-border:2px solid #ca9a74;
-transform:rotate(45deg) translateX(-2%) translateY(70%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ca9a74;
+  transform: rotate(45deg) translateX(-2%) translateY(70%);
 }
 /* ------------Pagination---------- */
 .pagination {
-margin: 4rem;
-
+  margin: 4rem;
 }
-.pagination li a{
-border: none;
-background-color: none;
-color: #67819b;
-font-size: 1.5rem;
-padding: 2 1rem;
+.pagination li a {
+  border: none;
+  background-color: none;
+  color: #67819b;
+  font-size: 1.5rem;
+  padding: 2 1rem;
 }
 .page-item.active .page-link {
-background-image: url(../img/paginationBg.png);
-background-size: cover;
-background-position: center;
-background-color: white;
-color: #67819b;
-font-size: 1.5rem;
+  background-image: url(../img/paginationBg.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  color: #67819b;
+  font-size: 1.5rem;
 }
 /* ----------shop 文章內頁----------- */
 .shop-article {
-font-family: 'Noto Sans TC', sans-serif;
-color: #707070; 
-font-weight: 100;
-letter-spacing: 0.1rem;
-line-height: 2rem;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #707070;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
 }
 .collectIcon {
-color: #243a41;
-font-size: 1.2rem;
+  color: #243a41;
+  font-size: 1.2rem;
 }
 .collect {
-background-color: #243a41;
-color: white;
-padding: 0.3rem 0.5rem 0.2rem 0.5rem;
-border-radius: 50%;
-
+  background-color: #243a41;
+  color: white;
+  padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 50%;
 }
 .collect:hover {
-background-color: #c7936c;
-color: white;
-padding: 0.3rem 0.5rem;
-border-radius: 50%;
-
+  background-color: #c7936c;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
 }
 
 /* ----------產品列表---------- */
 
 .productsTitle {
-font-family: 'Noto Sans TC', sans-serif;
-color: #243a41;
-font-weight: 500;
-letter-spacing: 0.1rem;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #243a41;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
 }
 .productsDetail {
-font-family: 'Noto Sans TC', sans-serif;
-color: #707070;
-font-weight: 100;
-letter-spacing: 0.1rem;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #707070;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
 }
 .product:hover {
-background-image: url(../img/productsHoverBg.png);
-background-size: cover;
-transition: all 0.5s;
-transform: scale(1.1);
-text-align: center;
-padding: 0.5rem 2rem;
-border-radius: 1rem;
-height: 100%;
-z-index: 2;
-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-
+  background-image: url(../img/productsHoverBg.png);
+  background-size: cover;
+  transition: all 0.5s;
+  transform: scale(1.1);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
-
-
+.hairTypeCollect {
+  text-decoration: none;
+  color: #707070;
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+}
+.hairTypeCollect li {
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+.hairTypeCollect li:hover {
+  text-decoration: none;
+  color: #c7936c;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .bg-color01 {
@@ -279,4 +288,3 @@ box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
     transform: translate(0%, 0%);
   }
 }
-

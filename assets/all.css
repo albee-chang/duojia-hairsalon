@@ -188,6 +188,22 @@ a:hover {
   z-index: 9;
 }
 
+.w3-button {
+  background-color: white;
+  color: #67819b;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.w3-button:hover {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
 /* ---------導覽列 結束--------- */
 
 /* ---------footer 設定---------- */
