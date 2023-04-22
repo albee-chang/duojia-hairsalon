@@ -19,7 +19,15 @@
     />
     <!-- 載入 W3 CSS CDN -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="./assets/css/shoppingCar.css" />
+
+    <!-- 載入 Google Noto Sans Traditional Chinese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/news.css" />
     <link rel="stylesheet" href="./assets/all.css" />
   </head>
   <body>
@@ -31,7 +39,7 @@
           ><img src="./assets/img/logo.png" alt="Logo圖片"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapseList"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -71,7 +79,7 @@
                 <p class="line2">PARTNERS</p></a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -91,7 +99,7 @@
                 </ul>
               </a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -105,13 +113,13 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">髮質分類</a>
+                  <a class="dropdown-item" href="./shop.html">髮質分類</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">問題頭皮</a>
+                  <a class="dropdown-item" href="./shop.html">問題頭皮</a>
                 </li>
                 <li class="dropdown-card">
-                  <a class="dropdown-item" href="#">熱銷推薦</a>
+                  <a class="dropdown-item" href="./shop.html">熱銷推薦</a>
                 </li>
               </ul>
             </li>
@@ -120,8 +128,8 @@
       </div>
     </nav>
     <!-- 導覽列結束 -->
-    <!-- 主要內容 -->
-    <div class="carBg">
+    <!-- 最新消息 -->
+    <div class="newsBg">
       <div class="bg-color01">
         <img
           class="linear-gradient-01"
@@ -130,164 +138,139 @@
           alt="linear-gradient"
         />
       </div>
-      <div class="carTitleArea">
+      <div class="newsTitleArea">
         <img
           class="contentPageLine"
           src="./assets/img/contentPageLine_02.png"
-          alt="carTitleArea"
+          alt="newsTitleArea"
         />
       </div>
-      <img
-        class="carBgImg"
-        src="./assets/img/storyBg.png"
-        alt="storyBgImg"
-      />
+      <img class="newsBgImg" src="./assets/img/storyBg.png" alt="storyBgImg" />
       <div class="logoTag">DO PLUS</div>
-      <div class="carTitleEN">car CENTER</div>
-      <div class="carBread-crumb">
+      <div class="newsTitleEN">NEWS</div>
+      <div class="newsBread-crumb">
         <a href="./index.html" title="Home"><i class="bi bi-house-door"></i></a>
-        <span>/ 會員中心</span>
+        <span>/ 最新消息</span>
       </div>
     </div>
-    <div class="carContainer">
-      <h3 class="carTitle fw-bold">會員中心</h3>
+    <div class="newsContainer">
+      <h3 class="newsTitle fw-bold">最新消息</h3>
       <!-- sidebar -->
-      <div class="carContent d-flex w3-container row">
+      <div class="newsContent d-flex w3-container">
         <div
-          class="w3-bar d-flex flex-column col-3"
+          class="w3-bar d-none d-md-flex flex-column align-items-center"
           style="width: 200px"
         >
           <button
             class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'Latestcar')"
+            onclick="openHair(event, 'LatestNews')"
           >
-            會員中心
+            最新消息
           </button>
           <button
             class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'ShoppingCar')"
+            onclick="openHair(event, 'Discount')"
           >
-            我的購物車
+            優惠活動
           </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'Orders')"
-          >
-            訂單查詢
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'FavoriteList')"
-          >
-            我的收藏清單
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'Payment')"
-          >
-            付款說明
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'HistoryOrders')"
-          >
-            歷史訂單
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'ReturnExchange')"
-          >
-            退換貨說明
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="opencar(event, 'Logout')"
-          >
-            登出
-          </button>
+          <div class="w3-bar-item w3-dropdown-hover">
+            <button class="w3-button tablink" style="background-color: #f4f4f4">
+              2022<i class="bi bi-chevron-down ms-2"></i>
+            </button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#" class="w3-bar-item w3-button w3-disabled">2021</a>
+            </div>
+          </div>
         </div>
         <!-- content -->
-        <div class="col-9">
-          <div
-            id="Latestcar"
-            class="w3-container car"
-            style="display: block"
-          >
-            <h2>car</h2>
+        <div class="my-auto ms-md-5">
+          <div id="LatestNews" class="w3-container Hair" style="display: block">
+            <div class="container">
+              <!-- 文字部分 -->
+              <div class="position-relative row">
+                <div
+                  class="position-absolute top-0 end-0 dateTags text-center pt-1"
+                >
+                  20/DEC
+                </div>
+                <div class="col-2">
+                  <img
+                    src="./assets/img/logo_black.png"
+                    alt="logo"
+                    style="height: 40px; width: 40px;"
+                  />
+                </div>
+                <div class="col-10 my-5">
+                  <h4 class="fw-bold" style="color: #515f64">
+                    男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+                  </h4>
+                  <span class="news-article">
+                    最近天氣變冷，除了衣服換季，髮型當然也要換季，比起捲度、髮色，改變瀏海最能讓人
+                    有煥然一新的感受，畢竟瀏海是我們的門面，下手前當然要好好研究，今天這篇就是要與
+                    大家分享近年來討論度最高、最受歡迎的「韓系瀏海」，韓系瀏海自然、輕盈的本質本來
+                    就很討喜了，再加上席捲而來的韓劇，讓韓系瀏海推陳出新的速度非常快，所以追隨潮流
+                    早就已經不是女孩們的專利啦！
+                    <br />
+                    許多男生愛美的程度可不輸女生，在整體的穿搭也是非常講究，可是髮型整理上就不是人
+                    人都這麼在行了，這次小編除了蒐集了基本的韓系瀏海女孩款式之外，也網羅了不少韓系
+                    瀏海男生造型，當然也會一起整理這些韓系瀏海的小撇步給大家，不管妳是自己選、還是
+                    幫男友選，相信都會有不錯的收穫唷！
+                  </span>
+                  <div class="text-center">
+                    <img
+                    src="./assets/img/slide03.png"
+                    alt="news01"
+                    class="my-5"
+                    style="width: 480px;border-radius: 5%;"
+                  />
+                  </div>
+                  <span class="news-article">
+                    中分瀏海最近的能見度真是太高了，有一點復古、又有一點性格，這款韓系瀏海通常是落
+                    在接近眉毛的長度，也是今天介紹的幾款中最好照顧的髮型，隨性的往上、往左右兩邊吹
+                    整就可以了，這也是許多陸劇中可以看到的男主角髮型之一，像宋威龍就是非常有代表性
+                    的中分造型。
+                    這裡的波浪比較明顯，但偏微捲的捲度，需要較長的瀏海才能搞定，燙完的成品甚至會長
+                    過眼睛，所以通常會搭配中分瀏海，這樣也不會因為瀏海太長而遮住視線，往兩邊分的波
+                    浪瀏海會隨著捲度大小而產生截然不同的風格，若是選擇較小的捲度，看起來就像是個風
+                    情萬種的玩咖，連眼神都會勾人！但若是捲度大，不管是外捲還是內捲，都能透露出一種
+                    成熟暖男的氣質，像孔劉在《鬼怪》裡有點
+                    S型的瀏海造型，根本就是一隻溫暖可靠到不 行的鬼阿！
+                  </span>
+                  <div class="mt-5 collectIcon"><i class="bi bi-heart collect"></i> 1303</div>
+                  <a href="./news.html" class="sendBtn position-absolute bottom-0 end-0"
+                  ><i class="rightArrow"> </i><i class="box"></i
+                    ></a>
+                </div>
+                
+              </div>
+            </div>
           </div>
 
-          <div
-            id="ShoppingCar"
-            class="w3-container car"
-            style="display: none"
-          >
-            <h2>ShoppingCar</h2>
+          <div id="Discount" class="w3-container Hair" style="display: none">
+            <h2>Discount</h2>
+            <p>優惠商品</p>
           </div>
-          <div
-            id="Orders"
-            class="w3-container car"
-            style="display: none"
-          >
-            <h2>Orders</h2>
-        </div>
-            <div
-                id="FavoriteList"
-                class="w3-container car"
-                style="display: none"
-            >
-                <h2>FavoriteList</h2>
-            </div>
-            <div
-                id="Payment"
-                class="w3-container car"
-                style="display: none"
-            >
-                <h2>Payment</h2>
-            </div>
-            <div
-                id="HistoryOrders"
-                class="w3-container car"
-                style="display: none"
-            >
-                <h2>HistoryOrders</h2>
-            </div>
-            <div
-                id="ReturnExchange"
-                class="w3-container car"
-                style="display: none"
-            >
-                <h2>ReturnExchange</h2>
-            </div>
-            <div
-                id="Logout"
-                class="w3-container car"
-                style="display: none"
-            >
-                <h2>Logout</h2>
-            </div>      
         </div>
       </div>
     </div>
-    <!-- 品牌故事結束 -->
+    <!-- 最新消息結束 -->
     <!-- footer 部分 -->
     <footer>
       <div class="container">
         <div class="footerBox container">
-          <img src="./assets/img/footerLogo.png" class="footerLogoImg" alt="footerLogo" />
+          <img
+            src="./assets/img/footerLogo.png"
+            class="footerLogoImg"
+            alt="footerLogo"
+          />
           <div class="footerContainer row justify-content-between">
-            <div class="footerShopInfo col-1 col-lg-3">
-              <p>
-                <i class="bi bi-telephone-fill"></i> (07)216-2828
-              </p>
-              <p>
-                <i class="bi bi-geo-alt-fill"></i> 高雄市新興區民享街85-1號
-              </p>
-              <p>
-                <i class="bi bi-calendar-event"></i> 每周一店休
-              </p>
+            <div class="footerShopInfo col-12 col-lg-3">
+              <p><i class="bi bi-telephone-fill"></i> (07)216-2828</p>
+              <p><i class="bi bi-geo-alt-fill"></i> 高雄市新興區民享街85-1號</p>
+              <p><i class="bi bi-calendar-event"></i> 每周一店休</p>
             </div>
-            <div class="col-1 col-lg-6">
-              <ul class="list-unstyled footerNav row row-cols-4">
+            <div class="col-12 col-lg-6">
+              <ul class="list-unstyled footerNav row row-cols-2 row-cols-lg-4">
                 <li>
                   <a href="./story.html" title="About">品牌故事</a>
                 </li>
@@ -310,7 +293,7 @@
                   <a href="./payment.html" title="Payment">付款說明</a>
                 </li>
                 <li>
-                  <a href="./orders.html" title="Orders">歷史訂單</a>                  
+                  <a href="./orders.html" title="Orders">歷史訂單</a>
                 </li>
                 <li>
                   <a href="./privacyPolicy.html" title="Privacy">隱私權說明</a>
@@ -340,15 +323,15 @@
                 </li>
               </ul>
             </div>
-            <div class="footerMap col-1 col-lg-3">
+            <div class="footerMap col-12 col-lg-3">
               <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9971662877156!2d120.29346589999999!3d22.616581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e038093ffd537%3A0x1f9a3fc28c5ea31!2zODAyNDjpq5jpm4TluILoi5Ppm4XljYDmtbfpgorot68zMeiZnzI16Jmf!5e0!3m2!1szh-TW!2stw!4v1681746643963!5m2!1szh-TW!2stw"
-              width="224"
-              height="112"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9971662877156!2d120.29346589999999!3d22.616581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e038093ffd537%3A0x1f9a3fc28c5ea31!2zODAyNDjpq5jpm4TluILoi5Ppm4XljYDmtbfpgorot68zMeiZnzI16Jmf!5e0!3m2!1szh-TW!2stw!4v1681746643963!5m2!1szh-TW!2stw"
+                width="224"
+                height="112"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
@@ -361,9 +344,9 @@
     <!-- footer 部分結束 -->
     <!-- 載入 tab function -->
     <script>
-      function opencar(evt, carName) {
+      function openHair(evt, HairName) {
         var i, x, tablinks;
-        x = document.getElementsByClassName("car");
+        x = document.getElementsByClassName("Hair");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
         }
@@ -374,7 +357,7 @@
             ""
           );
         }
-        document.getElementById(carName).style.display = "block";
+        document.getElementById(HairName).style.display = "block";
         evt.currentTarget.className += " w3-text-brown w3-border-bottom";
       }
     </script>

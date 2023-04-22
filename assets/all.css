@@ -5,7 +5,7 @@
     url("./fonts/5cfbae91ba82e6689f76fdc43d9444b7.woff2") format("woff2");
 }
 
-body {
+* {
   font-family: "KuroW00", "Noto Sans TC", sans-serif;
 }
 
@@ -20,14 +20,11 @@ nav {
   height: 122px;
 }
 
-/* .navbar {
-  z-index: 1;
-} */
-.navbar>.container {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: center;
+.navbar > .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center;
 }
 .navbar-wrapper {
   position: relative;
@@ -43,10 +40,6 @@ nav {
   height: 64px;
   background-color: #243a41;
 }
-
-/* .nav-container {
-  --bs-gutter-x: 0;
-} */
 
 .collapse {
   flex-grow: 0;
@@ -90,7 +83,7 @@ nav {
   width: 4.3rem;
   height: 1.5rem;
   background-color: #243a41;
-  color: white;
+  color: #c9ced0;
   border-radius: 2rem;
   text-align: center;
   letter-spacing: 0.3rem;
@@ -99,7 +92,6 @@ nav {
   margin-right: 28px;
   top: 0;
   margin-top: 5px;
-
 }
 
 .nav-link {
@@ -195,10 +187,26 @@ a:hover {
   z-index: 9;
 }
 
+.w3-button {
+  background-color: white;
+  color: #67819b;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.w3-button:hover {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
 /* ---------導覽列 結束--------- */
 
 /* ---------footer 設定---------- */
-.footerDesign{
+.footerDesign {
   background-color: #67819b;
   text-align: center;
   font-weight: 300;
@@ -217,7 +225,7 @@ a:hover {
   padding-top: 80px;
 }
 
-.footerContainer{
+.footerContainer {
   font-weight: 300;
   font-size: 14px;
   text-align: start;
@@ -238,9 +246,15 @@ a:hover {
   display: inline-block;
 }
 
-.footerMap{
+.footerMap {
   text-align: end;
   margin-top: -32px;
+}
+.footerLogoImg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ---------footer 結束---------- */
@@ -345,8 +359,7 @@ a:hover {
     position: absolute;
   }
 
-  
-/* --------- nav 手機 --------- */
+  /* --------- nav 手機 --------- */
   .nav-bar-icon {
     position: absolute;
     top: 50%;
@@ -389,6 +402,17 @@ a:hover {
   }
   .nav-bar-icons i {
     padding: 5px 10px 0 10px;
+  }
+  .footerBox {
+    border-radius: 60px 60px 0 0;
+  }
+  .footerContainer {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .footerMap {
+    text-align: center;
+    margin-top: 8px;
   }
 }
 
