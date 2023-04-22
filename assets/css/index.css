@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-.bg-color01 {
+.index-bg-color01 {
   background-color: #ebe7d2;
   width: 800px;
   height: 480px;
@@ -16,7 +16,7 @@
   top: 0%;
   right: 0%;
 }
-.bg-color02 {
+.index-bg-color02 {
   background-color: #ececec80;
   width: 800px;
   height: 480px;
@@ -26,12 +26,12 @@
   margin-top: 160px;
 }
 
-.linear-gradient-01 {
+.index-linear-gradient-01 {
   position: absolute;
   bottom: -20px;
   right: 0;
 }
-.linear-gradient-02 {
+.index-linear-gradient-02 {
   position: absolute;
   top: -20px;
   left: 0;
@@ -299,7 +299,7 @@
     overflow: hidden;
     transition: 0.3s ease-out;
   }
-  .bg-color01 {
+  .index-bg-color01 {
     background-color: #ebe7d2;
     width: 100%;
     height: 500px;
@@ -307,11 +307,11 @@
     top: -5%;
 
   }  
-  .linear-gradient-01 {
+  .index-linear-gradient-01 {
     position: absolute;
     bottom: -20px;
   }
-  .bg-color02 {
+  .index-bg-color02 {
     background-color: #ececec80;
     width: 800px;
     height: 480px;
@@ -321,7 +321,7 @@
     margin-top: 160px;
     transition: 0.3s ease-out;
   }
-  .linear-gradient-02 {
+  .index-linear-gradient-02 {
     position: absolute;
     top: -20px;
     left: 0;

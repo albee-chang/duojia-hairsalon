@@ -7,24 +7,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-.contentPageLine {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-top: 5rem;
-}
-.logoTag {
-  position: absolute;
-  z-index: 1;
-  top: 18%;
-  left: 7%;
-  font-weight: 500;
-  font-size: 18px;
-  color: #243a41;
-  max-width: 100%;
-  max-height: 100%;
-}
 .shopTitle {
   color: #737d81;
 }
@@ -38,22 +20,6 @@
   top: 20%;
   left: 26%;
   letter-spacing: 0.1rem;
-}
-
-.bg-color01 {
-  background-color: #ebe7d2;
-  width: 25rem;
-  height: 10rem;
-  position: absolute;
-  top: -14%;
-  right: 0%;
-  overflow: hidden;
-}
-
-.linear-gradient-01 {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
 }
 
 .shopBread-crumb {
@@ -146,7 +112,47 @@
   width: 50%;
   margin: 0.5rem auto;
 }
+/* 隱藏所有內容區塊 */
+.tabcontent {
+  display: none;
+}
 
+/* 樣式化 tab 按鈕 */
+.tab button.tablinks {
+  background-color: #eee;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 當選擇的時候改變樣式 */
+.tab button.tabOpen {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 樣式化子選單區塊 */
+.tabcontent .sub-tab button.sub-tablinks {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 當選擇的時候改變樣式 */
+.tabcontent .sub-tab button.tabOpen {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 當 tab 內容可見時 */
+.tabcontent.tabOpen {
+  display: block;
+}
 
 
 /* -------arrow-------- */
@@ -358,21 +364,6 @@ select {
     height: 550vh;
     margin: 0 auto;
   }
-  .bg-color01 {
-    background-color: #ebe7d2;
-    width: 100%;
-    height: 10rem;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    overflow: hidden;
-  }
-
-  .linear-gradient-01 {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-  }
   .shopBread-crumb {
     position: absolute;
     z-index: 1;
@@ -395,20 +386,6 @@ select {
     top: 90%;
     left: 25%;
     letter-spacing: 0.1rem;
-  }
-  .contentPageLine {
-    display: none;
-  }
-  .logoTag {
-    position: absolute;
-    z-index: 1;
-    top: 90%;
-    left: 3%;
-    font-weight: 500;
-    font-size: 14px;
-    color: #243a41;
-    max-width: 100%;
-    max-height: 100%;
   }
   .shopBread-crumb {
     font-size: 10px;
