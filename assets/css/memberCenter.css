@@ -100,7 +100,6 @@ form button[type="submit"] {
   color: white;
   border: none;
   padding: 0.3vh 4vw;
-  border-radius: 0;
 }
 
 .memberCenertBtn:hover {

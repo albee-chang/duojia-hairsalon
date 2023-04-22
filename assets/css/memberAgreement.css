@@ -127,6 +127,7 @@
   color: white;
   border: none;
   padding: 0.3vh 4vw;
+  border-radius: 0;
 }
 
 .memberArgbtn:hover {
@@ -138,7 +139,7 @@
 
 @media screen and (max-width: 768px) {
   .memberArgBg .memberArgBgImg {
- display: none;
+    display: none;
   }
   .bg-color01 {
     background-color: #ebe7d2;
