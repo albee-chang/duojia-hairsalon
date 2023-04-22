@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "KuroW00",  sans-serif;
+  font-family: "KuroW00", "Noto Sans TC", sans-serif;
 }
 
 /* ---------導覽列 開始--------- */
@@ -222,24 +222,23 @@ a:hover {
   transform: skewX(-60deg);
 }
 .sendBtn .box1 {
-  width:40px;
-  height:40px;
-  border:2px solid #ca9a74;
-  transform:rotate(45deg) translateX(-2%) translateY(70%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ca9a74;
+  transform: rotate(45deg) translateX(-2%) translateY(70%);
 }
 .sendBtn .box2 {
-  width:40px;
-  height:40px;
-  border:1px solid #ca9a74;
-  transform:rotate(45deg) translateX(-150%) translateY(220%);
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ca9a74;
+  transform: rotate(45deg) translateX(-150%) translateY(220%);
 }
 
 /* ------------Pagination---------- */
 .pagination {
   margin: 4rem;
-  
 }
-.pagination li a{
+.pagination li a {
   border: none;
   background-color: none;
   color: #67819b;
