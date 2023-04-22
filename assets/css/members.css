@@ -159,6 +159,21 @@ label {
   float: left;
 }
 
+.ordersPrice {
+  color: #c7936c;
+}
+.cancelBtn {
+  margin: 0;
+  height: 18px;
+  background-color: #c7936c;
+  color: white;
+  font-size: 8px;
+  border: none;
+  text-align: center;
+  padding-top: 0;
+  width: 70%;
+}
+
 @media screen and (max-width: 768px) {
   .bg-color01 {
     background-color: #ebe7d2;
