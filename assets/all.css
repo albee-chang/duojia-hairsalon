@@ -232,6 +232,7 @@ nav {
   line-height: 2rem;
   letter-spacing: 0.2rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .themeContentImg {
@@ -516,6 +517,7 @@ footer {
   .contentPageLine {
     display: none;
   }
+
   footer {
     margin-top: 100px;
   }

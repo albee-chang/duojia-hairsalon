@@ -106,7 +106,7 @@
 @media screen and (max-width: 700px) {
 
   .loginBox {
-    /* height: 220vh; */
+    height: 180vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 615px 230px 350px 100px;
