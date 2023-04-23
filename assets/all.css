@@ -250,24 +250,38 @@ a:hover {
 }
 
 /* ------------Pagination---------- */
-.pagination {
-  margin: 4rem;
+.page a {
+  text-decoration: none;
 }
-.pagination li a {
-  border: none;
+.onPage {
+  color: #466481;
+  font-size: 1.5rem;
+}
+.square1 {
+  bottom: 20%;
+  right: 0%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c7936c;
+  transform: rotate(45deg);
   background-color: none;
+}
+.square2 {
+  position: absolute;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #c7936c;
+  transform: rotate(45deg);
+  transform: translate(220%, 50%);
+}
+.pageNum {
+  display: inline-block;
   color: #67819b;
   font-size: 1.5rem;
-  padding: 2 1rem;
+  padding: 1rem;
 }
-.page-item.active .page-link {
-  background-image: url(../img/paginationBg.png);
-  background-size: cover;
-  background-position: center;
-  background-color: white;
-  color: #67819b;
-  font-size: 1.5rem;
-}
+
 
 /* ---------footer 設定---------- */
 footer {
