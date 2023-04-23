@@ -112,50 +112,7 @@ form button[type="submit"] {
 
 /* ----- 表格結束 ------ */
 
-.memberCenterBg {
-  position: relative;
-}
 
-.memberCenterBg .memberCenterBgImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-
-.memberCenterTitleEN {
-  font-family: "KuroW00", sans-serif;
-  font-weight: 500;
-  font-size: 25pt;
-  color: #67819b;
-  text-align: left;
-  position: absolute;
-  z-index: 1;
-  top: 30%;
-  left: 24%;
-  letter-spacing: 0.1rem;
-}
-
-
-.memberCenterBread-crumb {
-  position: absolute;
-  z-index: 1;
-  top: 35%;
-  right: 10%;
-  font-weight: 500;
-  font-size: 12px;
-  color: #243a41;
-  max-width: 100%;
-  max-height: 100%;
-  text-decoration: none;
-}
-.memberCenterBread-crumb i {
-  color: white;
-  background-color: #243a41;
-  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
-  border-radius: 50%;
-}
 
 /* --- main page ---- */
 
@@ -164,13 +121,6 @@ form button[type="submit"] {
   color: #243a41;
 }
 
-.memberCenterContainer {
-  width: 75%;
-  color: #828b8e;
-  line-height: 2rem;
-  letter-spacing: 0.2rem;
-  margin: 0 auto;
-}
 
 .memberCenterform {
   display: flex;
@@ -192,46 +142,6 @@ form button[type="submit"] {
 
 /* ----- 響應式開始 ----- */
 @media screen and (max-width: 768px) {
-  .memberCenterBg .memberCenterBgImg {
-    display: none;
-  }
-
-  .memberCenterBread-crumb {
-    position: absolute;
-    z-index: -1;
-    top: 90%;
-    right: 3%;
-    font-weight: 500;
-    font-size: 12px;
-    color: #243a41;
-    max-width: 100%;
-    max-height: 100%;
-    text-decoration: none;
-  }
-  .memberCenterTitleEN {
-    font-family: "KuroW00", sans-serif;
-    font-weight: 500;
-    font-size: 25pt;
-    color: #67819b;
-    text-align: left;
-    position: absolute;
-    z-index: -1;
-    top: 110%;
-    left: 25%;
-    letter-spacing: 0.1rem;
-  }
-
-  .memberCenterBread-crumb {
-    font-size: 10px;
-  }
-  .memberCenterTags {
-    font-size: 14px;
-  }
-  .memberCenterContainer {
-    width: 90%;
-    margin-top: 10rem;
-  }
-
   .memberCenertCheckbox {
     display: flex;
     padding: 0.25rem 1rem;

@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "KuroW00", "Noto Sans TC", sans-serif;
+  font-family: "KuroW00", sans-serif;
 }
 
 /* ---------導覽列 開始--------- */
@@ -119,7 +119,8 @@ nav {
   animation-timing-function: ease;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
   color: #243a41;
   background-color: #ebe7d2;
 }
@@ -158,7 +159,11 @@ nav {
   margin-left: unset;
   color: #243a41;
 }
-
+.w3-container {
+  width: 100%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
 .w3-button {
   background-color: white;
   color: #67819b;
@@ -176,13 +181,74 @@ nav {
   font-size: 16px;
 }
 /* ---------導覽列 結束--------- */
+/* ---------header vectors----------- */
+.themeBg {
+  position: relative;
+  height: 100%;
+}
+.themeBg .themeBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.themeTitleEN {
+  font-family: "KuroW00", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  color: #67819b;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 28%;
+  left: 25%;
+  letter-spacing: 0.1rem;
+}
+
+.themeBread-crumb {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 10%;
+  font-family: "思源黑體";
+  font-weight: 500;
+  font-size: 12px;
+  color: #243a41;
+  max-width: 100%;
+  max-height: 100%;
+  text-decoration: none;
+}
+.themeBread-crumb i {
+  color: white;
+  background-color: #243a41;
+  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+
+  border-radius: 50%;
+}
+
+.themeContainer {
+  width: 75%;
+  color: #828b8e;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+}
+
+.themeContentImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ---------header vectors 結束----------- */
+
 a {
   background-color: transparent;
 }
 
 a:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 /* 內頁背景色塊位置 */
 .bg-color01 {
@@ -219,7 +285,6 @@ a:hover {
   object-fit: cover;
   margin-top: 5rem;
 }
-
 
 /* -------arrow-------- */
 .sendBtn i {
@@ -259,7 +324,7 @@ a:hover {
 }
 .square1 {
   bottom: 20%;
-  right: 0%;
+  right: 8%;
   width: 40px;
   height: 40px;
   border: 1px solid #c7936c;
@@ -281,11 +346,58 @@ a:hover {
   font-size: 1.5rem;
   padding: 1rem;
 }
+/* --------返回 TOP 按鈕-------- */
+.connectIcon {
+  position: fixed;
+  bottom: 6%;
+  right: 0;
+  margin: 2rem 3rem;
+  z-index: 999;
+  font-size: 22px;
+  background-color: #c99f4f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10%;
+  padding: 0.1rem 1.2rem;
+}
+.connectIcon i {
+  color: white;
+}
+.connectIcon:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 0px 3px 10px 3px rgba(114, 100, 100, 0.2);
+}
+.backToTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem 3rem;
+  z-index: 999;
+  font-size: 22px;
+  background-color: #c99f4f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10%;
+  padding: 0.1rem 1.2rem;
+}
+.backToTop i {
+  color: white;
+}
+.backToTop:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 0px 3px 10px 3px rgba(114, 100, 100, 0.2);
+}
+
+
 
 
 /* ---------footer 設定---------- */
 footer {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .footerDesign {
   background-color: #67819b;
@@ -340,8 +452,98 @@ footer {
 
 /* ---------footer 結束---------- */
 
-/* --------- RWD調整 ---------- */
+/* --------- RWD調整 平板 ---------- */
 @media screen and (max-width: 992px) {
+  .nav-container {
+    background-color: #c7936c;
+  }
+  .nav-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    text-align: center;
+    position: unset;
+    margin: 16px 16px 0 16px;
+    padding: 8px;
+  }
+  .iconLine {
+    border: solid 2px #c7936c;
+  }
+  .nav-item {
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .nav-link {
+    align-items: center;
+  }
+  .nav-item:hover .dropdown-menu {
+    position: absolute;
+  }
+  .navbar .active .line2 {
+    margin-left: unset;
+  }
+  .nav-bar-icons a:hover {
+    color: white;
+  }
+  /* -------背景色塊 RWD--------- */
+  .bg-color01 {
+    background-color: #ebe7d2;
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  .linear-gradient-01 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+  .logoTag {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 3%;
+    font-family: "KuroW00", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #243a41;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .contentPageLine {
+    display: none;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .footerBox {
+    border-radius: 60px 60px 0 0;
+  }
+  .footerContainer {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .footerMap {
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+/* --------- 動畫 --------- */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------- RWD調整 手機 ---------- */
+@media screen and (max-width: 768px) {
   .nav-container {
     background-color: #c7936c;
   }
@@ -377,7 +579,7 @@ footer {
   .bg-color01 {
     background-color: #ebe7d2;
     width: 100%;
-    height: 15rem;
+    height: 10rem;
     position: absolute;
     top: 90%;
     right: 0%;
@@ -392,7 +594,7 @@ footer {
   .logoTag {
     position: absolute;
     z-index: 1;
-    top: 95%;
+    top: 20%;
     left: 3%;
     font-family: "KuroW00", sans-serif;
     font-weight: 500;
@@ -403,6 +605,40 @@ footer {
   }
   .contentPageLine {
     display: none;
+  }
+  /* -------header vectors---------- */
+  .themeBread-crumb {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    right: 3%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #243a41;
+    max-width: 100%;
+    max-height: 100%;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .themeTitleEN {
+    font-family: "KuroW00", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #67819b;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    margin: 0 auto;
+    letter-spacing: 0.1rem;
+  }
+
+  .themeContainer {
+    width: 90%;
+    margin-top: 6rem;
+  }
+  .container {
+    margin: 0 auto;
   }
   footer {
     margin-top: 80px;
@@ -429,4 +665,3 @@ footer {
     opacity: 1;
   }
 }
-

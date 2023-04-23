@@ -1,73 +1,14 @@
-.w3-container {
-  width: 100%;
-  padding-bottom: 150px;
-  box-sizing: border-box;
+.w3-bar {
+  width: 180px;
 }
 
-.membersBg {
-  position: relative;
-  height: 100%;
-}
-.membersBg .membersBgImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.membersTitle {
-  color: #737d81;
-}
-.membersTitleEN {
-  font-family: "KuroW00", sans-serif;
-  font-weight: 500;
-  font-size: 25pt;
-  color: #67819b;
-  text-align: left;
-  position: absolute;
-  z-index: 1;
-  top: 25%;
-  left: 25%;
-  letter-spacing: 0.1rem;
-}
-
-.membersBread-crumb {
-  position: absolute;
-  z-index: 1;
-  top: 35%;
-  right: 10%;
-  font-weight: 500;
-  font-size: 12px;
-  color: #243a41;
-  max-width: 100%;
-  max-height: 100%;
-  text-decoration: none;
-}
-.membersBread-crumb i {
-  color: white;
-  background-color: #243a41;
-  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
-  border-radius: 50%;
-}
-
-.membersContainer {
-  width: 75%;
-  color: #828b8e;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
-  margin: auto auto;
-}
 .membersContent {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: auto auto;
-}
-.membersContentImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  margin: 0 auto;
 }
 
 .membersLogo {
@@ -83,14 +24,6 @@
 
 .membersLogo img {
   max-width: 100%;
-}
-.membersCenter h2 {
-  font-family: "KuroW00", sans-serif;
-  background-color: #ebe7d2;
-  color: #243a41;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 /* ---------會員中心內頁區塊----------- */
@@ -140,218 +73,6 @@ label {
   padding-top: 0;
   width: 70%;
 }
-
-@media screen and (max-width: 768px) {
-
-  .membersBread-crumb {
-    position: absolute;
-    z-index: 1;
-    top: 65%;
-    right: 3%;
-    font-weight: 500;
-    font-size: 12px;
-    color: #243a41;
-    max-width: 100%;
-    max-height: 100%;
-    text-decoration: none;
-  }
-  .membersTitleEN {
-    font-family: "KuroW00", sans-serif;
-    font-weight: 500;
-    font-size: 25pt;
-    color: #67819b;
-    text-align: left;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 20%;
-    letter-spacing: 0.1rem;
-  }
-  .contentPageLine {
-    display: none;
-  }
-
-  .membersBread-crumb {
-    font-size: 10px;
-  }
-  .membersTags {
-    font-size: 14px;
-  }
-  .membersContainer {
-    width: 90%;
-    margin-top: 6rem;
-  }
-  .membersLogo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-
-/* ---------購物車內頁區塊----------- */
-
-.shoppingCar-icon-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 4rem;
-}
-
-.shoppingCar-icon-box {
-  justify-self: center;
-  text-align: center;
-  font-weight: 500;
-}
-
-.shoppingCar-icon {
-  padding: 2rem 2rem;
-  background-color: #243a41;
-  border-radius: 100%;
-}
-
-.shoppingCar-line {
-  border-left: 1.5px solid black;
-  height: 30%;
-  margin-left: 4.3rem;
-}
-
-/* --- shoppingCar-table start --- */
-
-.shoppingCar-table-Container {
-  position: relative;
-  width: 100%;
-}
-
-.shoppingCar-table {
-  margin-top: 10%;
-  vertical-align: middle;
-  align-items: center;
-  text-align: center;
-}
-
-.shoppingCar-table thead {
-  background: #ebe7d2;
-  color: #566565;
-  line-height: 1rem;
-}
-
-.shoppingCar-table td img {
-  margin-top: 10px;
-  height: 6vw;
-}
-
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  border-style: none;
-}
-
-.shoppingCar-table-Container p {
-  position: absolute;
-  right: 0;
-  color: #243a41;
-}
-
-.shoppingCar-table-Container .shoppingCar-total {
-  color: #c7936c;
-  margin-left: 2rem;
-  font-size: 20px;
-  font-weight: 900;
-}
-
-.orange {
-  color: #c7936c;
-}
-
-.table tbody tr:nth-child(even) {
-  background-color: #fbfbfb;
-}
-
-.input-group,
-.form-control {
-  background-color: #f2f2f2;
-  border: none;
-  margin: 0;
-  text-align: center;
-}
-
-.input-group .btn {
-  z-index: 0;
-}
-
-.trash {
-  cursor: pointer;
-  color: black;
-}
-
-.trash:hover {
-  color: darkred;
-}
-
-/* --- shoppingCar-table end --- */
-
-.all-page-title {
-  background: #ebe7d2;
-  line-height: 1.5rem;
-  color: #566565;
-  text-align: center;
-}
-
-.shoppingCar-info {
-  margin: 150px 0 100px 0;
-}
-
-.shoppingCar-info select {
-  background-color: #f2f2f2;
-  color: #566565;
-  font-size: 16px;
-  border: none;
-  padding: 8px 0px 8px 20px;
-}
-
-.shoppingCar-info select:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0099ff;
-}
-
-.shoppingCar-payment-text {
-  line-height: 1.5rem;
-  font-size: 12px;
-  margin: 1rem;
-}
-
-.shoppingCar-info-text {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5rem;
-}
-
-.subtotal-price-total {
-  font-size: 22px;
-  color: #c7936c;
-}
-
-.shoppingCar-info-text .promotion {
-  display: block;
-  width: 50%;
-  font-size: 14px;
-  line-height: 1.25rem;
-  color: #243a41;
-}
-
-.shoppingCar-info-btn {
-  display: flex;
-  justify-content: end;
-  margin: 5px;
-}
-
 .memberArgbtn {
   background-color: #243a41;
   color: white;
@@ -362,15 +83,196 @@ tr {
   font-size: 14px;
 }
 
-.memberArgbtn:hover {
-  background-color: #e0ab82;
-  color: white;
-  border: none;
-}
+
+  .membersLogo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+
+  /* ---------購物車內頁區塊----------- */
+
+  .shoppingCar-icon-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+  }
+
+  .shoppingCar-icon-box {
+    justify-self: center;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .shoppingCar-icon {
+    padding: 2rem 2rem;
+    background-color: #243a41;
+    border-radius: 100%;
+  }
+
+  .shoppingCar-line {
+    border-left: 1.5px solid black;
+    height: 30%;
+    margin-left: 4.3rem;
+  }
+
+  /* --- shoppingCar-table start --- */
+
+  .shoppingCar-table-Container {
+    position: relative;
+    width: 100%;
+  }
+
+  .shoppingCar-table {
+    margin-top: 10%;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shoppingCar-table thead {
+    background: #ebe7d2;
+    color: #566565;
+    line-height: 1rem;
+  }
+
+  .shoppingCar-table td img {
+    margin-top: 10px;
+    height: 6vw;
+  }
+
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
+    border-style: none;
+  }
+
+  .shoppingCar-table-Container p {
+    position: absolute;
+    right: 0;
+    color: #243a41;
+  }
+
+  .shoppingCar-table-Container .shoppingCar-total {
+    color: #c7936c;
+    margin-left: 2rem;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .orange {
+    color: #c7936c;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+  }
+
+  .input-group,
+  .form-control {
+    background-color: #f2f2f2;
+    border: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .input-group .btn {
+    z-index: 0;
+  }
+
+  .trash {
+    cursor: pointer;
+    color: black;
+  }
+
+  .trash:hover {
+    color: darkred;
+  }
+
+  /* --- shoppingCar-table end --- */
+
+  .all-page-title {
+    background: #ebe7d2;
+    line-height: 1.5rem;
+    color: #566565;
+    text-align: center;
+  }
+
+  .shoppingCar-info {
+    margin: 150px 0 100px 0;
+  }
+
+  .shoppingCar-info select {
+    background-color: #f2f2f2;
+    color: #566565;
+    font-size: 16px;
+    border: none;
+    padding: 8px 0px 8px 20px;
+  }
+
+  .shoppingCar-info select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0099ff;
+  }
+
+  .shoppingCar-payment-text {
+    line-height: 1.5rem;
+    font-size: 12px;
+    margin: 1rem;
+  }
+
+  .shoppingCar-info-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+  }
+
+  .subtotal-price-total {
+    font-size: 22px;
+    color: #c7936c;
+  }
+
+  .shoppingCar-info-text .promotion {
+    display: block;
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: #243a41;
+  }
+
+  .shoppingCar-info-btn {
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+  }
+
+
+
+  .memberArgbtn:hover {
+    background-color: #e0ab82;
+    color: white;
+    border: none;
+  }
 
 /* --------- RWD調整 ---------- */
 
 @media screen and (max-width: 992px) {
+  .w3-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .shoppingCar-icon-list {
     margin: 0;
   }
@@ -417,10 +319,7 @@ tr {
 
   table tr td:last-child {
     color: #c7936c;
-    position: absolute;
     font-size: 20px;
-    top: 0;
-    right: 0;
   }
 
   .shoppingCar-table td img {

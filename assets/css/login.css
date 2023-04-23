@@ -1,59 +1,3 @@
-.loginBg {
-  position: relative;
-}
-.loginBg .loginBgImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.loginTitleEN {
-  font-family: "KuroW00", sans-serif;
-  font-weight: 500;
-  font-size: 30pt;
-  color: #67819b;
-  text-align: left;
-  position: absolute;
-  z-index: 1;
-  top: 20%;
-  left: 24%;
-  letter-spacing: 0.2rem;
-}
-
-.loginBread-crumb {
-  position: absolute;
-  z-index: 1;
-  top: 35%;
-  right: 10%;
-  font-family: "思源黑體";
-  font-weight: 500;
-  font-size: 12px;
-  color: #243a41;
-  max-width: 100%;
-  max-height: 100%;
-  text-decoration: none;
-}
-.loginBread-crumb i {
-  color: white;
-  background-color: #243a41;
-  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
-  border-radius: 50%;
-}
-
-.loginContainer {
-  width: 75%;
-  color: #828b8e;
-  line-height: 2rem;
-  letter-spacing: 0.2rem;
-  margin: 0 auto;
-}
-
-.loginContentImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .w3-button {
   display: flex;
@@ -84,7 +28,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 70% 30%;
-  color: #000;
+  color: #616364;
   margin: 0 auto;
 }
 
@@ -228,41 +172,7 @@
     color: white;
     margin: 5rem auto;
   }
-  .loginBread-crumb {
-    position: absolute;
-    z-index: 1;
-    top: 120%;
-    right: 10%;
-    font-weight: 500;
-    font-size: 12px;
-    color: #243a41;
-    max-width: 100%;
-    max-height: 100%;
-    text-decoration: none;
-  }
-  .loginTitleEN {
-    font-family: "KuroW00", sans-serif;
-    font-weight: 500;
-    font-size: 20pt;
-    color: #67819b;
-    text-align: left;
-    position: absolute;
-    z-index: 1;
-    top: 140%;
-    left: 18%;
-    letter-spacing: 0.1rem;
-  }
 
-  .loginBread-crumb {
-    font-size: 10px;
-  }
-  .loginTags {
-    font-size: 14px;
-  }
-  .loginContainer {
-    width: 90%;
-    margin-top: 6rem;
-  }
 }
 
 
