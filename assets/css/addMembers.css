@@ -144,10 +144,9 @@ form button[type="submit"] {
 @media screen and (max-width: 768px) {
   .memberCenertCheckbox {
     display: flex;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     color: #243a41;
     font-size: 14px;
-    width: 65%;
     line-height: 1rem;
   }
   .memberCenertText {

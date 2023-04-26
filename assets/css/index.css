@@ -1,3 +1,9 @@
+/* --------------slide-------------- */
+.banner{
+  position: relative;
+  z-index: -1;
+  top: -112px;
+}
 .serviceArea {
   background-image: url("../img/serviceArea.png");
   background-size: cover;
@@ -51,7 +57,7 @@
   letter-spacing: 0.1rem;
 }
 .memberTitleCH {
-  font-family: "思源黑體";
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 400;
   font-size: 18pt;
   color: #243a41;
@@ -136,7 +142,7 @@
 }
 
 .serviceTitleCH {
-  font-family: "思源黑體";
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 400;
   font-size: 18pt;
   color: #243a41;
@@ -176,7 +182,7 @@
   color:#243a41;
 }
 .details {
-  font-family: "思源黑體";
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 200;
   font-size: 10pt;
   color:#243a41;
@@ -188,6 +194,192 @@
 
 
 /* --------------最新消息區塊-------------- */
+
+.circle-slide-area {
+  height: 1500px;
+  overflow: hidden;
+  padding-top: 236px;
+}
+.circle-slide-area .logoTag {
+  position: absolute;
+  top: 192px;
+  left: 296px;
+}
+.circle-slide-area .titleTag {
+  font-family: "KuroW00", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #243a41;
+  position: absolute;
+  top: 192px;
+  left: 1472px;
+}
+
+.bg-box {
+  max-width: unset !important;
+  width: 1920px !important;
+  height: 285px;
+  position: absolute;
+  top: -212px;
+  left: -749px;
+  z-index: 11;
+}
+.bg-box .bg {
+  width: 1920px !important;
+  position: absolute;
+  height: unset !important;
+}
+
+.bg-footr-box {
+  max-width: unset;
+  width: 1920px !important;
+  height: 1220px !important;
+  position: absolute;
+  top: 44px;
+  left: -749px;
+}
+.bg-footr-box .bg {
+  width: 1920px !important;
+  position: absolute;
+  height: 100% !important;
+}
+
+.circle-carousel {
+  transform-origin: bottom;
+  position: relative;
+  z-index: -1;
+  margin-left: -420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle-carousel .circle-container {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto 0;
+  z-index: -1;
+}
+.circle-carousel .circle-container > * {
+  display: block;
+  position: absolute;
+  width: 416px;
+}
+.circle-carousel .circle-container img {
+  display: block;
+  width: 416px;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  transition: 0.15s;
+}
+.circle-carousel .circle-container img:hover, .circle-carousel .circle-container img:active {
+  filter: grayscale(0);
+}
+.circle-carousel .circle-container li {
+  max-width: 416px;
+  height: 520px;
+}
+li.active {
+  transform: rotate(0deg);
+  z-index: 10;
+}
+li.active .newsLink {
+  display: block;
+  display: flex;
+}
+
+.next {
+  transform: rotate(24deg) !important;
+  top: 112px !important;
+  left: 528px !important;
+}
+
+.before {
+  transform: rotate(-24deg) !important;
+  top: 112px !important;
+  left: -528px !important;
+}
+
+.next2 {
+  transform: rotate(48deg) !important;
+  top: 424px !important;
+  left: 960px !important;
+}
+
+.before2 {
+  transform: rotate(-48deg) !important;
+  top: 424px !important;
+  left: -960px !important;
+}
+
+.title-box {
+  position: absolute;
+  top: 584px;
+  left: 0;
+  z-index: 11;
+  height: unset !important;
+  text-align: center;
+}
+.title-box .newsTitleEN {
+  color: #67819b;
+  font-size: 54px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+}
+.title-box .newsTitleCH {
+  color: #243a41;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.newsLink {
+  border-radius: 5px;
+  background: #fff;
+  opacity: 0.85;
+  box-shadow: -5px 5px 13px 6px rgba(0, 0, 0, 0.15);
+  width: 560px;
+  margin-left: -72px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: absolute;
+  top: 704px;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.newsLink .news-img {
+  margin-right: 16px;
+  width: 40px;
+}
+.newsLink .news-img img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.newsLink .sendBtn {
+  margin-right: 48px;
+  right: 0 !important;
+  border: 0 !important;
+  bottom: 32px !important;
+  position: absolute;
+  z-index: 999;
+}
+.newsLink .rightArrow {
+  position: absolute;
+  top: 36px !important;
+  right: -4px !important;
+}
+.newsLink .box1 {
+  position: absolute;
+}
+
+.index-footer {
+  background-image: url(../img/footer_bg.png);
+  background-repeat: repeat;
+  margin-top: -248px;
+}
 
 
 /* --------------響應式調整-------------- */
@@ -207,7 +399,7 @@
     letter-spacing: 0.1rem;
   }
   .memberTitleCH {
-    font-family: "思源黑體";
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     font-size: 18pt;
     color: #243a41;
@@ -226,11 +418,14 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .banner{
+    position: unset;
+  }
   .serviceArea {
     height: 2200px;
   }
   .memberTitleCH {
-    font-family: "思源黑體";
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     font-size: 14pt;
     color: #243a41;
@@ -342,7 +537,7 @@
   }
 
   .serviceTitleCH {
-    font-family: "思源黑體";
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     font-size: 14pt;
     color: #243a41;
@@ -363,4 +558,87 @@
     width: 100%;
     height: auto;
   }
+}
+@media screen and (max-width: 768px) {
+  .newsLink {
+    width: 420px;
+        margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .newsLink p {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .newsLink {
+    width: 350px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -17px;
+  }
+  .circle-carousel {
+    margin-left: -316px;
+  }
+  .bg-box {
+    top: -160px;
+    left: -560px;
+  }
+  .bg-box .bg {
+    width: 1440px !important;
+    height: 216px !important;
+  }
+  .title-box {
+    top: 416px;
+  }
+  .newsLink {
+    top: 536px;
+  }
+  .circle-carousel .circle-container > * {
+    width: 316px;
+  }
+  .circle-carousel .circle-container img {
+    width: 316px;
+    height: unset;
+    aspect-ratio: 0.8;
+  }
+  .index-footer {
+    margin-top: -386px;
+  }
+  .next {
+    top: 80px !important;
+    left: 376px !important;
+  }
+  .before {
+    top: 80px !important;
+    left: -376px !important;
+  }
+}
+
+/* 調整 */
+.sendBtn2 .rightArrow2{
+  bottom: unset;
+  right: unset;
+  left: 4px;
+  top: -8px;
+  padding: 1px 80px 10px 12px;
+}
+
+.sendBtn2{
+  position: absolute;
+    z-index: 2;
+    bottom: 18%;
+    right: 20%;
+}
+.sendBtn2 .box1{
+  position: absolute;
+  left: 184px;
+  bottom: 1px;
+}
+
+@media screen and (max-width: 576px) {
+  
+.sendBtn2{
+  display: none;
+}
 }

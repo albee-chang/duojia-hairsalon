@@ -360,4 +360,8 @@ label {
     padding: 1vh 3vw;
     margin: 0.5rem;
   }
+  
+  .w3-bar{
+    align-items:flex-start;
+  }
 }

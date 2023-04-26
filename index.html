@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/all.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- 導覽列 -->
@@ -128,14 +129,38 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-bar-icons">
+            <li class="nav-bar-icons car-link">
               <a href="./login.html"><i class="bi bi-person-fill text-white"></i><span class="d-inline d-lg-none"> 登入 </span>
                 </a
               ><span class="iconLine"></span>
-              <a href="./shoppingCar.html"
+              <a href="./membersCenter.html"
                 ><i class="bi bi-cart4 text-white"></i
               ><span class="d-inline d-lg-none "> 購物車 </span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-card">
+                  <div class="product-card">
+                    <img src="./assets/img/products/products_01.png"  class="product-img " alt="" srcset="">
+                    <div class="text-box">
+                      <p class="title">保濕潤澤洗髮精</p>
+                      <p class="textPrice">$1,479 x1</p>
+                    </div>
+                  </div>
                 </li>
+                <li class="dropdown-card">
+                  <div class="product-card">
+                    <img src="./assets/img/products/products_07.png" class="product-img " alt="" srcset="">
+                    <div class="text-box">
+                      <p class="title">豐盈清爽洗髮精</p>
+                      <p class="textPrice">$1,479 x1</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown-card">
+                  <p class="mb-2">商品小計 $2,958</p>
+                  <a class="dropdown-item car-btn" href="./membersCenter.html">購物車</a>
+                </li>
+              </ul>
+              </li>
           </ul>
         </div>
       </div>
@@ -144,7 +169,7 @@
     <!-- 輪播 -->
     <div class="banner">
       <div
-        id="carouselExampleControls"
+        id="carouselControls"
         class="carousel slide"
         data-bs-ride="carousel"
       >
@@ -264,8 +289,7 @@
         class="nk-btn main-btn sm-btn sendBtn2"
         href="./service.html"
         title="shop"
-        ><i class="rightArrow2"></i>
-        <button class="linkSquare"></button>
+        ><i class="rightArrow2"></i><i class="box1"></i>
       </a>
       <div class="serviceImg">
         <img src="./assets/img/hairSalon.png" alt="serviceImg" />
@@ -290,6 +314,105 @@
     <!-- 線上商城以及服務項目結束 -->
 
     <!-- NEWS -->
+    <section class="circle-slide-area">
+      <div class='circle-carousel'>
+        <ul class='circle-container'>
+          <li class="bg-box">
+            <p class="logoTag">DO PLUS</p>
+            <p class="titleTag"><span class="triangle2"></span>SALON & CREATIVE</p>
+            <img src="./assets/img/index-newsArea.png" alt="" srcset="" class="bg">
+          </li>
+          <li class="bg-footr-box">
+            <img src="./assets/img/index-news-footer.png" alt="" srcset="" class="bg">
+          </li>
+          <li class="title-box">
+            <h2 class="newsTitleEN">NEWS</h2>
+            <h2 class="newsTitleCH">最新消息</h2>
+          </li>
+          <li class='itemDot before2' data-tab="5">
+            <img src='./assets/img/slide01.png' alt='...' />
+            <div class="newsLink">
+              <div class="news-img">
+                <img src="./assets/img/logo_black.png" alt="logo">
+              </div>
+              <div class="news-word">
+                <h6 class="fw-bolder" style="color:#243a41;">男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+                  </h6>
+                  <p style="color:#707070;">最近天氣變冷，除了衣服換季，髮型當然也要換季</p>
+              <a href="./newsContentPage.html" class="sendBtn position-absolute bottom-0 end-0"><i class="rightArrow">
+                </i><i class="box1"></i></a>
+                </div>
+            </div>
+          </li>
+        <li class="itemDot before" data-tab="1">
+          <img src="./assets/img/slide02.png" alt="" srcset="">
+          <div class="newsLink">
+            <div class="news-img">
+              <img src="./assets/img/logo_black.png" alt="logo">
+            </div>
+            <div class="news-word">
+              <h6 class="fw-bolder" style="color:#243a41;">男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+                </h6>
+                <p style="color:#707070;">最近天氣變冷，除了衣服換季，髮型當然也要換季</p>
+            <a href="./newsContentPage.html" class="sendBtn position-absolute bottom-0 end-0"><i class="rightArrow">
+              </i><i class="box1"></i></a>
+              </div>
+          </div>
+        </li>
+        
+        <li class="itemDot active" data-tab="2">
+          <img src="./assets/img/slide03.png" alt="" srcset="">
+          <div class="newsLink">
+            <div class="news-img">
+              <img src="./assets/img/logo_black.png" alt="logo">
+            </div>
+            <div class="news-word">
+              <h6 class="fw-bolder" style="color:#243a41;">男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+              </h6>
+              <p style="color:#707070;">最近天氣變冷，除了衣服換季，髮型當然也要換季</p>
+              <a href="./newsContentPage.html" class="sendBtn">
+                            <i class="rightArrow">
+                        </i><i class="box1"></i>
+                      </a>
+                      
+                        </div>
+                    </div>
+        </li>
+        <li class="itemDot next" data-tab="3">
+          <img src="./assets/img/slide04.png" alt="" srcset="">
+          <div class="newsLink">
+            <div class="news-img">
+              <img src="./assets/img/logo_black.png" alt="logo">
+            </div>
+            <div class="news-word">
+              <h6 class="fw-bolder" style="color:#243a41;">男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+                </h6>
+                <p style="color:#707070;">最近天氣變冷，除了衣服換季，髮型當然也要換季</p>
+            <a href="./newsContentPage.html" class="sendBtn position-absolute bottom-0 end-0"><i class="rightArrow">
+              </i><i class="box1"></i></a>
+              </div>
+          </div>
+        </li>
+        <li class="itemDot next2" data-tab="4">
+          <img src="./assets/img/slide05.png" alt="" srcset="">
+          <div class="newsLink">
+            <div class="news-img">
+              <img src="./assets/img/logo_black.png" alt="logo">
+            </div>
+            <div class="news-word">
+              <h6 class="fw-bolder" style="color:#243a41;">男女髮型通通有！盤點爆款韓系瀏海，流行趨勢一手掌握！
+                </h6>
+                <p style="color:#707070;">最近天氣變冷，除了衣服換季，髮型當然也要換季</p>
+            <a href="./newsContentPage.html" class="sendBtn position-absolute bottom-0 end-0"><i class="rightArrow">
+              </i><i class="box1"></i></a>
+              </div>
+          </div>
+        </li>
+    
+        </ul>
+      </div>
+    </section>
+    <!-- NEWS END -->
         <!-- 返回 TOP 按鈕 -->
         <div class="connectIcon">
           <a href="#"><i class="bi bi-chat"></i></a>
@@ -299,7 +422,7 @@
         </div>
         <!-- 返回 TOP 按鈕結束 -->
     <!-- footer 部分 -->
-    <footer>
+    <footer class="index-footer">
       <div class="container">
         <div class="footerBox container">
           <img
@@ -387,12 +510,43 @@
     </footer>
     <!-- 設定輪播效果 -->
     <script>
-      const carousel = document.querySelector(".footer-carousel");
-      const carouselInstance = new bootstrap.Carousel(carousel, {
-        interval: 2000,
-        wrap: true,
-        touch: true,
-      });
+    let i=1;
+    
+    $(document).ready(function(){
+          console.log('ready');
+      function countNum(i) {
+        if(i<1){
+          return i+5
+        }else if(i>5){
+          return i-5
+        }else{
+          return i 
+        }
+      }
+      setInterval(function(){
+        var dataTab= $('.itemDot.active').data("tab");
+        if(i>5){
+        dataTab=1;
+        i=1;
+        
+        }
+        $('.itemDot').removeClass('active');
+        $('.itemDot').removeClass('next');
+        $('.itemDot').removeClass('next2');
+        $('.itemDot').removeClass('before');
+        $('.itemDot').removeClass('before2');
+        $('[data-tab="'+countNum(i)+'"]').addClass('active');
+        $('[data-tab="'+countNum(i+1)+'"]').addClass('next');
+        $('[data-tab="'+countNum(i+2)+'"]').addClass('next2');
+        $('[data-tab="'+countNum(i-1)+'"]').addClass('before');
+        $('[data-tab="'+countNum(i-2)+'"]').addClass('before2');
+              console.log(i)
+        i++;
+          
+        }, 2500); 
+      
+    });
+
     </script>
     <!-- 載入 Bootstrap JS -->
     <script
